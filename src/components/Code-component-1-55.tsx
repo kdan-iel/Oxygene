@@ -6,7 +6,6 @@ import { Badge } from './ui/badge';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Search, Calendar, User, ArrowRight, Clock } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import DynamicHero from './DynamicHero';
 
 interface BlogPageProps {
   onNavigate: (page: string) => void;
@@ -315,16 +314,17 @@ Avec ces techniques, vous obtiendrez des vitres parfaitement transparentes et sa
   }
 
   return (
-    <div className="min-h-screen">
-      <DynamicHero
-        title={t('nav.blog')}
-        subtitle="Expertise et conseils"
-        description="Conseils d'experts, astuces pratiques et actualités du secteur du nettoyage professionnel"
-        backgroundImage="https://images.unsplash.com/photo-1705990787785-3ca3eb668131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjbGVhbmluZyUyMG9mZmljZXxlbnwxfHx8fDE3NTc1MDIxOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
-        height="h-[50vh]"
-      />
-      
-      <div className="max-w-7xl mx-auto px-4 py-16">
+    <div className="min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-6">
+            {t('nav.blog')}
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Conseils d'experts, astuces pratiques et actualités du secteur du nettoyage professionnel
+          </p>
+        </div>
 
         {/* Search and Filters */}
         <div className="mb-12">

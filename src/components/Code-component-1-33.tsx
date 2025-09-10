@@ -25,17 +25,17 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
   const heroSlides = [
     {
-      image: "https://images.unsplash.com/photo-1627098241506-344dea0aa27b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBvZmZpY2UlMjBjbGVhbmluZyUyMHRlYW18ZW58MXx8fHwxNzU3NDgyNTMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://images.unsplash.com/photo-1648469941040-b1c1fac2d4b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBjbGVhbmluZyUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NTc1MDExNjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       title: t('home.hero.title'),
       subtitle: t('home.hero.subtitle')
     },
     {
-      image: "https://images.unsplash.com/photo-1666418093542-95ef85253732?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYnVpbGRpbmclMjBtYWludGVuYW5jZSUyMGNsZWFuaW5nfGVufDF8fHx8MTc1NzUwMzQwNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://images.unsplash.com/photo-1723759550818-48cfe5609381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYnVpbGRpbmclMjBjbGVhbmluZ3xlbnwxfHx8fDE3NTc1MDExNjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       title: "Nettoyage commercial professionnel",
       subtitle: "Solutions adaptées à tous types d'entreprises et commerces"
     },
     {
-      image: "https://images.unsplash.com/photo-1742483359033-13315b247c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjbGVhbmluZyUyMGVxdWlwbWVudCUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NTc1MDM0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://images.unsplash.com/photo-1690244775977-74844b4f4b1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3aW5kb3clMjBjbGVhbmluZ3xlbnwxfHx8fDE3NTc1MDExNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       title: "Entretien spécialisé",
       subtitle: "Vitres, sols, surfaces - nous maîtrisons toutes les techniques"
     }

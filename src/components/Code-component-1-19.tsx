@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Menu, X, Globe } from 'lucide-react';
-import oxygèneLogo from 'figma:asset/d869bec3ca966d7f70fc3a85a7aaf8ff21e86558.png';
 
 interface HeaderProps {
   currentPage: string;
@@ -54,11 +53,8 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0 cursor-pointer" onClick={() => onNavigate('home')}>
-              <img 
-                src={oxygèneLogo} 
-                alt="Oxygène - Hygiène et propreté" 
-                className="h-12 w-auto object-contain"
-              />
+              <h1 className="text-2xl font-bold text-[#0680d2]">Oxygène</h1>
+              <p className="text-xs text-gray-600">Services d'hygiène</p>
             </div>
 
             {/* Desktop Navigation */}

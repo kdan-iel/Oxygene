@@ -8,7 +8,6 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { Mail, Phone, MapPin, Clock, CheckCircle } from 'lucide-react';
 import { useForm } from 'react-hook-form@7.55.0';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import DynamicHero from './DynamicHero';
 
 interface ContactPageProps {
   onNavigate: (page: string) => void;
@@ -45,18 +44,18 @@ const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
   };
 
   return (
-    <div className="min-h-screen">
-      <DynamicHero
-        title={t('contact.title')}
-        subtitle="Parlons de votre projet"
-        description="Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans vos projets de nettoyage."
-        backgroundImage="https://images.unsplash.com/photo-1587560699334-bea93391dcef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250YWN0JTIwYnVzaW5lc3MlMjBvZmZpY2V8ZW58MXx8fHwxNzU3NTAyNDQ3fDA&ixlib=rb-4.1.0&q=80&w=1080"
-        height="h-[50vh]"
-        showCTA={true}
-        ctaText="Appelez-nous"
-      />
-      
-      <div className="max-w-7xl mx-auto px-4 py-16">
+    <div className="min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-6">
+            {t('contact.title')}
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Notre équipe est à votre disposition pour répondre à toutes vos questions 
+            et vous accompagner dans vos projets de nettoyage.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}

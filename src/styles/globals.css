@@ -2,6 +2,13 @@
 
 :root {
   --font-size: 16px;
+  /* Oxygène Brand Colors */
+  --oxygene-primary: #0680d2;
+  --oxygene-white: #ffffff;
+  --oxygene-light-gray: #f5f7fa;
+  --oxygene-anthracite: #333333;
+  --oxygene-soft-green: #4caf50;
+  
   --background: #ffffff;
   --foreground: #333333;
   --card: #ffffff;
@@ -10,34 +17,34 @@
   --popover-foreground: #333333;
   --primary: #0680d2;
   --primary-foreground: #ffffff;
-  --secondary: #F5F7FA;
+  --secondary: #f5f7fa;
   --secondary-foreground: #333333;
-  --muted: #F5F7FA;
-  --muted-foreground: #717182;
-  --accent: #4CAF50;
+  --muted: #f5f7fa;
+  --muted-foreground: #666666;
+  --accent: #4caf50;
   --accent-foreground: #ffffff;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
-  --border: rgba(0, 0, 0, 0.1);
+  --border: rgba(51, 51, 51, 0.1);
   --input: transparent;
-  --input-background: #F5F7FA;
+  --input-background: #f5f7fa;
   --switch-background: #cbced4;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
   --ring: #0680d2;
   --chart-1: #0680d2;
-  --chart-2: #4CAF50;
-  --chart-3: #F5F7FA;
-  --chart-4: #333333;
-  --chart-5: #ffffff;
-  --radius: 0.5rem;
-  --sidebar: #F5F7FA;
+  --chart-2: #4caf50;
+  --chart-3: #333333;
+  --chart-4: #f5f7fa;
+  --chart-5: #666666;
+  --radius: 0.625rem;
+  --sidebar: #f5f7fa;
   --sidebar-foreground: #333333;
   --sidebar-primary: #0680d2;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #ffffff;
   --sidebar-accent-foreground: #333333;
-  --sidebar-border: rgba(0, 0, 0, 0.1);
+  --sidebar-border: rgba(51, 51, 51, 0.1);
   --sidebar-ring: #0680d2;
 }
 
@@ -186,9 +193,4 @@
 
 html {
   font-size: var(--font-size);
-  font-family: 'Inter', 'system-ui', sans-serif;
-}
-
-body {
-  font-family: 'Inter', 'system-ui', sans-serif;
 }

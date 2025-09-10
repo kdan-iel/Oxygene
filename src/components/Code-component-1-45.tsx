@@ -8,7 +8,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { useLanguage } from '../contexts/LanguageContext';
 import { CheckCircle, Phone, Mail, Clock } from 'lucide-react';
 import { useForm } from 'react-hook-form@7.55.0';
-import DynamicHero from './DynamicHero';
 
 interface QuotePageProps {
   onNavigate: (page: string) => void;
@@ -115,18 +114,17 @@ const QuotePage: React.FC<QuotePageProps> = ({ onNavigate }) => {
   }
 
   return (
-    <div className="min-h-screen">
-      <DynamicHero
-        title={t('quote.title')}
-        subtitle="Devis personnalisé gratuit"
-        description="Obtenez votre devis personnalisé en quelques minutes. Notre équipe vous contactera rapidement pour finaliser votre projet."
-        backgroundImage="https://images.unsplash.com/photo-1738618139780-dc7478cf72f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxxdW90ZSUyMHJlcXVlc3QlMjBidXNpbmVzc3xlbnwxfHx8fDE3NTc1MDI0NDd8MA&ixlib=rb-4.1.0&q=80&w=1080"
-        height="h-[50vh]"
-        showCTA={true}
-        ctaText="Commencer"
-      />
-      
-      <div className="max-w-4xl mx-auto px-4 py-16">
+    <div className="min-h-screen py-12">
+      <div className="max-w-4xl mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-6">
+            {t('quote.title')}
+          </h1>
+          <p className="text-xl text-gray-600">
+            Obtenez votre devis personnalisé en quelques minutes
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Form */}
