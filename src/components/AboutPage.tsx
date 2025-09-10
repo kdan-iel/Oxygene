@@ -2,7 +2,8 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { useLanguage } from '../contexts/LanguageContext';
 import { AnimatedHero } from './AnimatedHero';
-import { Users, Heart, Award, Leaf } from 'lucide-react';
+import { motion } from 'motion/react';
+import { Users, Heart, Award, Leaf, Lightbulb, Target, Recycle } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface AboutPageProps {
@@ -11,7 +12,36 @@ interface AboutPageProps {
 
 export function AboutPage({ onPageChange }: AboutPageProps) {
   const { t } = useLanguage();
-
+const values = [
+    {
+      icon: Award,
+      title: t === 'fr' ? "Excellence" : "Excellence",
+      description: t === 'fr' ? 
+        "Excellence et qualité dans chaque prestation" : 
+        "Excellence and quality in every service"
+    },
+    {
+      icon: Recycle,
+      title: t === 'fr' ? "Écologie" : "Ecology",
+      description: t === 'fr' ? 
+        "Respect de l'environnement et développement durable" : 
+        "Environmental respect and sustainable development"
+    },
+    {
+      icon: Users,
+      title: t === 'fr' ? "Écoute" : "Listening",
+      description: t === 'fr' ? 
+        "Écoute client et solutions personnalisées" : 
+        "Client listening and personalized solutions"
+    },
+    {
+      icon: Lightbulb,
+      title: t === 'fr' ? "Innovation" : "Innovation",
+      description: t === 'fr' ? 
+        "Innovation et amélioration continue" : 
+        "Innovation and continuous improvement"
+    }
+  ];
   return (
     <div className="min-h-screen">
       {/* Animated Header */}
@@ -64,6 +94,49 @@ export function AboutPage({ onPageChange }: AboutPageProps) {
                 className="rounded-lg shadow-lg"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Values */}
+      <section className="py-16 bg-[#f5f7fa]">
+        <div className="max-w-6xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6">
+              {t === 'fr' ? "Nos valeurs" : "Our values"}
+            </h2>
+            <p className="text-xl text-gray-600">
+              {t === 'fr' ? 
+                "Les valeurs qui guident notre action au quotidien" : 
+                "The values that guide our daily actions"
+              }
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => {
+              const IconComponent = value.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:scale-105"
+                >
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-4">
+                    <IconComponent size={24} />
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#333333] mb-3">{value.title}</h3>
+                  <p className="text-gray-600">{value.description}</p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

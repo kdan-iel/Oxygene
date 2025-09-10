@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Menu, X, Phone, Mail } from 'lucide-react';
-import oxygeneLogoImg from 'figma:asset/f1b8c0f0ee449cf4dfe17084bbe6a38b9ec309db.png';
+import oxygeneLogoImg from '../assets/logo_oxygene.png';
 
 interface HeaderProps {
   currentPage: string;
@@ -117,7 +117,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
               src={oxygeneLogoImg}
               alt="Oxygène - Hygiène et propreté"
               className={`transition-all duration-300 ${
-                isScrolled ? 'h-10' : 'h-14'
+                isScrolled ? 'h-14' : 'h-16'
               }`}
               style={{
                 filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))'
