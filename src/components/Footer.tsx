@@ -17,8 +17,7 @@ export function Footer({ onPageChange }: FooterProps) {
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Oxygène</h3>
             <p className="text-gray-300 mb-4">
-              Solutions de nettoyage professionnelles depuis 2008. 
-              Qualité, fiabilité et respect de l'environnement.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />

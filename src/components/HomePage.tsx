@@ -27,18 +27,18 @@ export function HomePage({ onPageChange }: HomePageProps) {
   const heroSlides = [
     {
       image: "https://images.unsplash.com/photo-1648469941040-b1c1fac2d4b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBjbGVhbmluZyUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NTczNjMzODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      title: t('home.hero.title'),
-      subtitle: t('home.hero.subtitle')
+      title: t('home.hero.title1'),
+      subtitle: t('home.hero.subtitle1')
     },
     {
       image: "https://images.unsplash.com/photo-1630908650794-e76619014675?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMG1vZGVybiUyMGJ1aWxkaW5nJTIwd2luZG93c3xlbnwxfHx8fDE3NTczNjg0MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      title: "Nettoyage de vitres professionnel",
-      subtitle: "Des vitres impeccables pour une image parfaite de votre entreprise"
+      title: t('home.hero.title2'),
+      subtitle: t('home.hero.subtitle2')
     },
     {
       image: "https://images.unsplash.com/photo-1625044364652-c841c1ae31b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjYXJwZXQlMjBjbGVhbmluZyUyMHNlcnZpY2V8ZW58MXx8fHwxNzU3MzY4NDE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      title: "Expertise en nettoyage de tapis",
-      subtitle: "Redonnez vie à vos tapis avec nos techniques professionnelles"
+      title: t('home.hero.title3'),
+      subtitle: t('home.hero.subtitle3')
     }
   ];
 
@@ -179,7 +179,7 @@ export function HomePage({ onPageChange }: HomePageProps) {
         {/* Slide Indicators */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
           {heroSlides.map((_, index) => (
-            <button
+            <button type="button" title={`Slide ${index + 1}`}
               key={index}
               className={`w-3 h-3 rounded-full transition-colors ${
                 index === currentSlide ? 'bg-white' : 'bg-white/50'
@@ -331,9 +331,9 @@ export function HomePage({ onPageChange }: HomePageProps) {
       {/* Final CTA */}
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Prêt à transformer vos espaces ?</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('finalcta.title')}</h2>
           <p className="text-xl mb-8 opacity-90">
-            Contactez-nous dès aujourd'hui pour un devis gratuit et personnalisé
+            {t('finalcta.subtitle')}
           </p>
           <Button 
             size="lg"

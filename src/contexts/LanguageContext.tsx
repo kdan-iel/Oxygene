@@ -30,10 +30,19 @@ const translations = {
     'common.learn-more': 'En savoir plus',
     'common.our-services': 'Nos services',
     'common.view-all': 'Voir tout',
+    'finalcta.title': 'Prêt à transformer vos espaces ?',
+    'finalcta.subtitle': 'Contactez-nous dès aujourd\'hui pour un devis gratuit et personnalisé',
+
+    //Footer
+    'footer.description': 'Solutions de nettoyage professionnelles depuis 2008. Qualité, fiabilité et respect de l\'environnement.', 
     
     // Homepage
-    'home.hero.title': 'Solutions de nettoyage professionnelles',
-    'home.hero.subtitle': 'Oxygène, votre partenaire de confiance pour tous vos besoins de nettoyage professionnel. Qualité, fiabilité et respect de l\'environnement.',
+    'home.hero.title1': 'Solutions de nettoyage professionnelles',
+    'home.hero.subtitle1': 'Oxygène, votre partenaire de confiance pour tous vos besoins de nettoyage professionnel. Qualité, fiabilité et respect de l\'environnement.',
+    'home.hero.title2': 'Nettoyage de vitres professionnel',
+    'home.hero.subtitle2': 'Des vitres impeccables pour une image parfaite de votre entreprise',
+    'home.hero.title3': 'Expertise en nettoyage de tapis',
+    'home.hero.subtitle3': 'Redonnez vie à vos tapis avec nos techniques professionnelles',
     'home.hero.cta': 'Découvrir nos services',
     
     'home.values.title': 'Nos valeurs',
@@ -132,10 +141,19 @@ const translations = {
     'common.learn-more': 'Learn more',
     'common.our-services': 'Our services',
     'common.view-all': 'View all',
+    'finalcta.title': 'Ready to transform your spaces?',
+    'finalcta.subtitle': 'Contact us today for a free, personalized quote',
     
+    //Footer
+    'footer.description': 'Professional cleaning solutions since 2008. Quality, reliability and environmental respect.',
+
     // Homepage
-    'home.hero.title': 'Professional Cleaning Solutions',
-    'home.hero.subtitle': 'Oxygène, your trusted partner for all your professional cleaning needs. Quality, reliability and environmental respect.',
+    'home.hero.title1': 'Professional Cleaning Solutions',
+    'home.hero.subtitle1': 'Oxygène, your trusted partner for all your professional cleaning needs. Quality, reliability and environmental respect.',
+    'home.hero.title2': 'Professional window cleaning',
+    'home.hero.subtitle2': 'Spotless windows for a perfect image of your business',
+    'home.hero.title3': 'Carpet cleaning expertise',
+    'home.hero.subtitle3': 'Bring your carpets back to life with our professional techniques',
     'home.hero.cta': 'Discover our services',
     
     'home.values.title': 'Our values',
