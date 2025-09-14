@@ -85,17 +85,18 @@ export function Footer({ onPageChange }: FooterProps) {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5" />
                 <div className="text-gray-300">
-                  <p>123 Rue de la Propreté</p>
-                  <p>75001 Paris, France</p>
+                  <p>{t('footer.address1')}</p>
+                  <p>{t('footer.address2')}</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">+33 1 23 45 67 89</span>
+                <span className="text-gray-300">93252996 / 96130264</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">contact@oxygene-proprete.fr</span>
+                <span className="text-gray-300">oxygenecontact@
+                  yahoo.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-primary mt-0.5" />
@@ -111,7 +112,7 @@ export function Footer({ onPageChange }: FooterProps) {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Oxygène Solutions. Tous droits réservés.
+            © 2025 Oxygène Hygiène et Propreté. Tous droits réservés.
           </p>
         </div>
       </div>

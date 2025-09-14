@@ -35,7 +35,11 @@ const translations = {
 
     //Footer
     'footer.description': 'Solutions de nettoyage professionnelles depuis 2008. Qualité, fiabilité et respect de l\'environnement.', 
-    
+    'footer.address1': `Rue AOUISSI (En face du centre de 
+    santé communautaire de Be-Klikamé),`,
+    'footer.address2': `Lomé 22 BP 
+    354 Lomé-Togo`,
+
     // Homepage
     'home.hero.title1': 'Solutions de nettoyage professionnelles',
     'home.hero.subtitle1': 'Oxygène, votre partenaire de confiance pour tous vos besoins de nettoyage professionnel. Qualité, fiabilité et respect de l\'environnement.',
@@ -146,6 +150,8 @@ const translations = {
     
     //Footer
     'footer.description': 'Professional cleaning solutions since 2008. Quality, reliability and environmental respect.',
+    'footer.address1': 'Rue AOUISSI (In front of the Be-Klikamé community health center),',
+    'footer.address2': 'Lomé 22 BP 354 Lomé-Togo',
 
     // Homepage
     'home.hero.title1': 'Professional Cleaning Solutions',
