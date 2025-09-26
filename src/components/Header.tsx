@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail, Languages } from 'lucide-react';
 import oxygeneLogoImg from '../assets/logo_oxygene.png';
 
 interface HeaderProps {
@@ -12,6 +12,7 @@ interface HeaderProps {
 
 export function Header({ currentPage, onPageChange }: HeaderProps) {
   const { language, setLanguage, t } = useLanguage();
+  const [iconHover, setIconHover] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { scrollY } = useScroll();
@@ -67,7 +68,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
           boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.1), 0 1px 3px rgba(6,128,210,0.3)'
         }}
       >
-        <div className="container mx-auto px-4 py-2">
+        <div className="container mx-auto px-4 py-1">
           <div className="flex justify-between items-center text-sm">
             <div className="hidden md:flex space-x-6">
               <div className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
@@ -79,22 +80,21 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
                 <span>contact@oxygene-proprete.fr</span>
               </div>
             </div>
-            <div className="flex items-center space-x-2">
-              <Button
-                variant={language === 'fr' ? 'default' : 'ghost'}
-                size="sm"
-                onClick={() => setLanguage('fr')}
-                className="h-6 px-2 text-xs text-white hover:bg-white/20 transition-all duration-200"
+
+            {/* CTA Button */}
+            <div className="hidden lg:block">
+              <Button 
+                onClick={() => onPageChange('quote')}
+                className={`bg-yellow-500 hover:bg-yellow-600 text-black font-medium transition-all duration-200 ${
+                  isScrolled ? 'px-4 py-2 text-sm' : 'px-6 py-3'
+                }`}
+                style={{
+                  background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #fbbf24 100%)',
+                  boxShadow: '0 4px 14px rgba(251, 191, 36, 0.4), 0 2px 6px rgba(245, 158, 11, 0.3), inset 0 1px 0 rgba(255,255,255,0.3), inset 0 -1px 0 rgba(0,0,0,0.1)',
+                  border: '1px solid rgba(245, 158, 11, 0.3)'
+                }}
               >
-                FR
-              </Button>
-              <Button
-                variant={language === 'en' ? 'default' : 'ghost'}
-                size="sm"
-                onClick={() => setLanguage('en')}
-                className="h-6 px-2 text-xs text-white hover:bg-white/20 transition-all duration-200"
-              >
-                EN
+                {t('nav.quote')}
               </Button>
             </div>
           </div>
@@ -140,20 +140,20 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button 
-              onClick={() => onPageChange('quote')}
-              className={`bg-yellow-500 hover:bg-yellow-600 text-black font-medium transition-all duration-200 ${
-                isScrolled ? 'px-4 py-2 text-sm' : 'px-6 py-3'
-              }`}
-              style={{
-                background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #fbbf24 100%)',
-                boxShadow: '0 4px 14px rgba(251, 191, 36, 0.4), 0 2px 6px rgba(245, 158, 11, 0.3), inset 0 1px 0 rgba(255,255,255,0.3), inset 0 -1px 0 rgba(0,0,0,0.1)',
-                border: '1px solid rgba(245, 158, 11, 0.3)'
-              }}
+          {/* language toggle button */}
+          <div className="flex items-center hover:text-white">
+            <Button
+              size="sm"
+              onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
+              className="h-8 px-4 text-black hover:text-white hover:bg-primary transition-all duration-200 flex items-center gap-2 bg-transparent"
+              onMouseEnter={() => setIconHover(true)}
+              onMouseLeave={() => setIconHover(false)}
             >
-              {t('nav.quote')}
+              <Languages
+                className="mr-1"
+                style={{ color: iconHover ? '#fff' : '#000' }}
+              />
+              {language === 'fr' ? 'FR' : 'EN'}
             </Button>
           </div>
 

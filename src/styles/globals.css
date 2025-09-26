@@ -192,3 +192,6 @@ html {
 body {
   font-family: 'Inter', 'system-ui', sans-serif;
 }
+.custom-modal-width {
+  max-width: 90vw !important;
+}

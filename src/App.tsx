@@ -10,6 +10,9 @@ import { ContactPage } from './components/ContactPage';
 import { BlogPage } from './components/BlogPage';
 import { Chatbot } from './components/Chatbot';
 import { AnimatedHero } from './components/AnimatedHero';
+import { ReferencesPage } from './components/ReferencesPage';
+import { GalleryPage } from './components/GalleryPage';
+import { CareersPage } from './components/CareersPage';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -29,53 +32,11 @@ export default function App() {
       case 'contact':
         return <ContactPage onPageChange={setCurrentPage} />;
       case 'references':
-        return (
-          <div className="min-h-screen">
-            <AnimatedHero
-              title="Nos références"
-              subtitle="Ils nous font confiance"
-              backgroundImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200"
-              height="h-[400px]"
-            />
-            <div className="py-16">
-              <div className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold text-center">Références - Page en construction</h1>
-              </div>
-            </div>
-          </div>
-        );
+        return <ReferencesPage onPageChange={setCurrentPage} />;
       case 'gallery':
-        return (
-          <div className="min-h-screen">
-            <AnimatedHero
-              title="Galerie"
-              subtitle="Découvrez nos réalisations"
-              backgroundImage="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
-              height="h-[400px]"
-            />
-            <div className="py-16">
-              <div className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold text-center">Galerie - Page en construction</h1>
-              </div>
-            </div>
-          </div>
-        );
+        return <GalleryPage onPageChange={setCurrentPage} />;
       case 'careers':
-        return (
-          <div className="min-h-screen">
-            <AnimatedHero
-              title="Emploi"
-              subtitle="Rejoignez notre équipe"
-              backgroundImage="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200"
-              height="h-[400px]"
-            />
-            <div className="py-16">
-              <div className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold text-center">Emploi - Page en construction</h1>
-              </div>
-            </div>
-          </div>
-        );
+        return <CareersPage onPageChange={setCurrentPage} />;
       default:
         return <HomePage onPageChange={setCurrentPage} />;
     }

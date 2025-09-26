@@ -7,7 +7,7 @@ import { Textarea } from './ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { useLanguage } from '../contexts/LanguageContext';
 import { CheckCircle, Phone, Mail, MapPin } from 'lucide-react';
-import { useForm } from 'react-hook-form@7.55.0';
+import { useForm } from 'react-hook-form';
 import { AnimatedHero } from './AnimatedHero';
 
 interface QuoteFormData {

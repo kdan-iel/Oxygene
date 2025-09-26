@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion, useAnimation, easeOut } from 'framer-motion'; // update your import
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
@@ -45,7 +45,7 @@ export function AnimatedHero({
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
+        ease: easeOut
       }
     }
   };
@@ -57,7 +57,7 @@ export function AnimatedHero({
       opacity: 1,
       transition: {
         duration: 1.2,
-        ease: "easeOut"
+        ease: easeOut
       }
     }
   };

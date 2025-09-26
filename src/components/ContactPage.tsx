@@ -7,7 +7,7 @@ import { Textarea } from './ui/textarea';
 import { useLanguage } from '../contexts/LanguageContext';
 import { AnimatedHero } from './AnimatedHero';
 import { MapPin, Phone, Mail, Clock, CheckCircle } from 'lucide-react';
-import { useForm } from 'react-hook-form@7.55.0';
+import { useForm } from 'react-hook-form';
 
 interface ContactFormData {
   name: string;

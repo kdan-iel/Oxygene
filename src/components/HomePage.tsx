@@ -76,7 +76,28 @@ export function HomePage({ onPageChange }: HomePageProps) {
   ];
 
   const clientLogos = [
-    'Groupe Carrefour', 'BNP Paribas', 'Orange', 'SNCF', 'EDF', 'L\'Oréal'
+    {
+      name: 'Client 1',
+      logo: '/assets/logo_oxygene.png'
+    },
+    {
+      name: 'Client 2',
+      logo: '/assets/logo_oxygene.png' 
+    },
+    {
+      name: 'Client 3',
+      logo: '/assets/logo_oxygene.png'
+    },
+    {
+      name: 'Client 4', 
+      logo: '/assets/logo_oxygene.png'
+    },
+    { name: 'Client 5',
+      logo: '/assets/logo_oxygene.png'
+    },
+    { name: 'Client 6',
+      logo: '/assets/logo_oxygene.png'
+    }
   ];
 
   const blogPosts = [
@@ -285,8 +306,13 @@ export function HomePage({ onPageChange }: HomePageProps) {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             {clientLogos.map((client, index) => (
               <div key={index} className="text-center p-4 grayscale hover:grayscale-0 transition-all">
-                <div className="bg-gray-100 rounded-lg h-16 flex items-center justify-center">
-                  <span className="font-bold text-gray-600">{client}</span>
+                <div className="bg-gray-100 rounded-lg h-32 flex items-center justify-center">
+                  {/* <span className="font-bold text-gray-600">{client.name}</span> */}
+                  <ImageWithFallback
+                  src={client.logo}
+                  alt={client.name}
+                  className="w-full object-cover"
+                />
                 </div>
               </div>
             ))}

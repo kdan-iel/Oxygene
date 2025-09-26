@@ -164,13 +164,7 @@ export function ServicesPage({
             label: t("common.getQuote"),
             onClick: () => onPageChange("quote"),
             className: "bg-yellow-500 hover:bg-yellow-600 text-black",
-          },
-          {
-            label: t("common.contact"),
-            onClick: () => onPageChange("contact"),
-            variant: "outline",
-            className: "text-white border-white hover:bg-white hover:text-black",
-          },
+          }
         ]}
         height="h-[500px]"
       />
@@ -379,14 +373,6 @@ export function ServicesPage({
               className="bg-accent hover:bg-accent/90"
             >
               {t("common.getQuote")}
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => onPageChange("contact")}
-              className="text-white border-white hover:bg-white hover:text-primary"
-            >
-              {t("common.contact")}
             </Button>
           </div>
         </div>

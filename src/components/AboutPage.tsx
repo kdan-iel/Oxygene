@@ -24,12 +24,6 @@ export function AboutPage({ onPageChange }: AboutPageProps) {
             label: t('common.getQuote'),
             onClick: () => onPageChange('quote'),
             className: 'bg-yellow-500 hover:bg-yellow-600 text-black'
-          },
-          {
-            label: t('common.contact'),
-            onClick: () => onPageChange('contact'),
-            variant: 'outline',
-            className: 'text-white border-white hover:bg-white hover:text-black'
           }
         ]}
         height="h-[450px]"
