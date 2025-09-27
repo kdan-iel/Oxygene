@@ -77,26 +77,26 @@ export function HomePage({ onPageChange }: HomePageProps) {
 
   const clientLogos = [
     {
-      name: 'Client 1',
-      logo: '/assets/logo_oxygene.png'
+      name: 'Terminal De Containers de Lomé',
+      logo: '/assets/ref-lct.png'
     },
     {
-      name: 'Client 2',
-      logo: '/assets/logo_oxygene.png' 
+      name: 'SCAN Togo',
+      logo: '/assets/ref-sacn-togo.jpg' 
     },
     {
-      name: 'Client 3',
-      logo: '/assets/logo_oxygene.png'
+      name: 'Cimtogo',
+      logo: '/assets/ref-cimtogo.jpg'
     },
     {
-      name: 'Client 4', 
-      logo: '/assets/logo_oxygene.png'
+      name: 'Cofina', 
+      logo: '/assets/ref-cofina.png'
     },
-    { name: 'Client 5',
-      logo: '/assets/logo_oxygene.png'
+    { name: 'Oryx Energy',
+      logo: '/assets/ref-oryx-energy.jpg'
     },
-    { name: 'Client 6',
-      logo: '/assets/logo_oxygene.png'
+    { name: 'Sunu Assurances',
+      logo: '/assets/ref-sunu.jpg'
     }
   ];
 
@@ -168,10 +168,10 @@ export function HomePage({ onPageChange }: HomePageProps) {
                   </Button>
                   <Button 
                     size="lg" 
-                    onClick={() => onPageChange('quote')}
+                    onClick={() => onPageChange('contact')}
                     className="bg-yellow-500 hover:bg-yellow-600 text-black border-0"
                   >
-                    {t('common.getQuote')}
+                    {t('common.contact')}
                   </Button>
                 </div>
               </div>
@@ -303,16 +303,18 @@ export function HomePage({ onPageChange }: HomePageProps) {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">{t('home.clients.title')}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {clientLogos.map((client, index) => (
-              <div key={index} className="text-center p-4 grayscale hover:grayscale-0 transition-all">
-                <div className="bg-gray-100 rounded-lg h-32 flex items-center justify-center">
-                  {/* <span className="font-bold text-gray-600">{client.name}</span> */}
+              <div key={index} className="text-center p-4  hover:grayscale-0 transition-all group">
+                <div className="border-0 rounded-lg h-32 flex items-center justify-center flex-col-reverse mb-4">
                   <ImageWithFallback
                   src={client.logo}
                   alt={client.name}
                   className="w-full object-cover"
                 />
+                </div>
+                <div>
+                  <span className="font-bold text-black group-hover:text-primary">{client.name}</span>
                 </div>
               </div>
             ))}
@@ -363,10 +365,10 @@ export function HomePage({ onPageChange }: HomePageProps) {
           </p>
           <Button 
             size="lg"
-            onClick={() => onPageChange('quote')}
+            onClick={() => onPageChange('contact')}
             className="bg-yellow-500 hover:bg-yellow-600 text-black"
           >
-            {t('common.getQuote')}
+            {t('common.contact')}
           </Button>
         </div>
       </section>

@@ -40,8 +40,8 @@ export function ContactPage({ onPageChange }: ContactPageProps) {
         backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200"
         actions={[
           {
-            label: t('common.getQuote'),
-            onClick: () => onPageChange('quote'),
+            label: t('common.contact'),
+            onClick: () => onPageChange('contact'),
             className: 'bg-yellow-500 hover:bg-yellow-600 text-black'
           }
         ]}

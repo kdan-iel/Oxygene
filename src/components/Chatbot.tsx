@@ -92,7 +92,7 @@ export function Chatbot({ onPageChange }: ChatbotProps) {
   };
 
   const quickActions = [
-    { text: "Demander un devis", action: () => onPageChange('quote') },
+    { text: "Demander un devis", action: () => onPageChange('contact') },
     { text: "Voir nos services", action: () => onPageChange('services') },
     { text: "Nous contacter", action: () => onPageChange('contact') }
   ];

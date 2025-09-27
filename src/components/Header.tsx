@@ -84,7 +84,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <Button 
-                onClick={() => onPageChange('quote')}
+                onClick={() => onPageChange('contact')}
                 className={`bg-yellow-500 hover:bg-yellow-600 text-black font-medium transition-all duration-200 ${
                   isScrolled ? 'px-4 py-2 text-sm' : 'px-6 py-3'
                 }`}
@@ -94,7 +94,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
                   border: '1px solid rgba(245, 158, 11, 0.3)'
                 }}
               >
-                {t('nav.quote')}
+                {t('nav.cta')}
               </Button>
             </div>
           </div>
@@ -201,7 +201,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
               ))}
               <Button 
                 onClick={() => {
-                  onPageChange('quote');
+                  onPageChange('contact');
                   setMobileMenuOpen(false);
                 }}
                 className="text-black font-medium w-full mt-4"
@@ -221,7 +221,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
       {/* Sticky CTA for mobile */}
       <div className="lg:hidden fixed bottom-4 right-4 z-50">
         <Button 
-          onClick={() => onPageChange('quote')}
+          onClick={() => onPageChange('contact')}
           className="text-black font-medium hover:scale-105 transition-transform"
           style={{
             background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #fbbf24 100%)',
@@ -231,7 +231,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
           }}
           size="lg"
         >
-          {t('common.getQuote')}
+          {t('common.contact')}
         </Button>
       </div>
     </motion.header>

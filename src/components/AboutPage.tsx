@@ -21,8 +21,8 @@ export function AboutPage({ onPageChange }: AboutPageProps) {
         backgroundImage="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200"
         actions={[
           {
-            label: t('common.getQuote'),
-            onClick: () => onPageChange('quote'),
+            label: t('common.contact'),
+            onClick: () => onPageChange('contact'),
             className: 'bg-yellow-500 hover:bg-yellow-600 text-black'
           }
         ]}

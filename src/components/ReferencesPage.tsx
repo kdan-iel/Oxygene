@@ -40,34 +40,34 @@ export function ReferencesPage({ onPageChange }: ReferencesPageProps) {
       duration: language === 'fr' ? "4 ans" : "4 years",
       size: language === 'fr' ? "Hôtel 5 étoiles" : "5-star hotel",
       image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop"
-    },
-    { 
-      name: language === 'fr' ? "Centre médical Saint-Antoine" : "Saint-Antoine Medical Center", 
-      sector: language === 'fr' ? "Santé" : "Healthcare", 
-      testimonial: language === 'fr' ? "Respect strict des protocoles d'hygiène. Indispensable dans notre secteur d'activité." : "Strict compliance with hygiene protocols. Essential in our field of activity.",
-      rating: 5,
-      duration: language === 'fr' ? "5 ans" : "5 years",
-      size: language === 'fr' ? "Centre médical" : "Medical center",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop"
-    },
-    { 
-      name: language === 'fr' ? "Lycée Jean-Moulin" : "Jean-Moulin High School", 
-      sector: language === 'fr' ? "Éducation" : "Education", 
-      testimonial: language === 'fr' ? "Environnement sain pour nos élèves. Des espaces d'apprentissage toujours impeccables." : "Healthy environment for our students. Always impeccable learning spaces.",
-      rating: 5,
-      duration: language === 'fr' ? "6 ans" : "6 years",
-      size: language === 'fr' ? "1200 élèves" : "1200 students",
-      image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop"
-    },
-    { 
-      name: language === 'fr' ? "Siège social Danone" : "Danone Headquarters", 
-      sector: language === 'fr' ? "Agroalimentaire" : "Food Industry", 
-      testimonial: language === 'fr' ? "Partenaire de confiance depuis 5 ans. Excellence et innovation dans chaque intervention." : "Trusted partner for 5 years. Excellence and innovation in every intervention.",
-      rating: 5,
-      duration: language === 'fr' ? "5 ans" : "5 years",
-      size: language === 'fr' ? "Siège social" : "Headquarters",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop"
     }
+    // { 
+    //   name: language === 'fr' ? "Centre médical Saint-Antoine" : "Saint-Antoine Medical Center", 
+    //   sector: language === 'fr' ? "Santé" : "Healthcare", 
+    //   testimonial: language === 'fr' ? "Respect strict des protocoles d'hygiène. Indispensable dans notre secteur d'activité." : "Strict compliance with hygiene protocols. Essential in our field of activity.",
+    //   rating: 5,
+    //   duration: language === 'fr' ? "5 ans" : "5 years",
+    //   size: language === 'fr' ? "Centre médical" : "Medical center",
+    //   image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop"
+    // },
+    // { 
+    //   name: language === 'fr' ? "Lycée Jean-Moulin" : "Jean-Moulin High School", 
+    //   sector: language === 'fr' ? "Éducation" : "Education", 
+    //   testimonial: language === 'fr' ? "Environnement sain pour nos élèves. Des espaces d'apprentissage toujours impeccables." : "Healthy environment for our students. Always impeccable learning spaces.",
+    //   rating: 5,
+    //   duration: language === 'fr' ? "6 ans" : "6 years",
+    //   size: language === 'fr' ? "1200 élèves" : "1200 students",
+    //   image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop"
+    // },
+    // { 
+    //   name: language === 'fr' ? "Siège social Danone" : "Danone Headquarters", 
+    //   sector: language === 'fr' ? "Agroalimentaire" : "Food Industry", 
+    //   testimonial: language === 'fr' ? "Partenaire de confiance depuis 5 ans. Excellence et innovation dans chaque intervention." : "Trusted partner for 5 years. Excellence and innovation in every intervention.",
+    //   rating: 5,
+    //   duration: language === 'fr' ? "5 ans" : "5 years",
+    //   size: language === 'fr' ? "Siège social" : "Headquarters",
+    //   image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop"
+    // }
   ];
 
   const stats = [
@@ -105,7 +105,7 @@ export function ReferencesPage({ onPageChange }: ReferencesPageProps) {
         backgroundImage="https://images.unsplash.com/photo-1698423606637-3c3aa853f8a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBidWlsZGluZyUyMG1haW50ZW5hbmNlfGVufDF8fHx8MTc1NzUwMjE5N3ww&ixlib=rb-4.1.0&q=80&w=1080"
         actions={[
           {
-            label: t("common.getQuote"),
+            label: t("common.contact"),
             onClick: () => onPageChange("quote"),
             className: "bg-yellow-500 hover:bg-yellow-600 text-black",
           }
@@ -141,7 +141,7 @@ export function ReferencesPage({ onPageChange }: ReferencesPageProps) {
 
       {/* References Carousel */}
       <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -185,10 +185,10 @@ export function ReferencesPage({ onPageChange }: ReferencesPageProps) {
                         
                         <div className="p-6">
                           <div className="flex items-center justify-between mb-4">
-                            <h3 className="font-bold text-lg text-[#333333] group-hover:text-[#0680d2] transition-colors">
+                            <h3 className="font-bold text-lg text- group-hover:text-primary transition-colors">
                               {reference.name}
                             </h3>
-                            <span className="text-sm text-[#0680d2] bg-[#0680d2]/10 px-2 py-1 rounded-full">
+                            <span className="text-sm text-primary bg-gray-200 px-2 py-1 rounded-full">
                               {reference.sector}
                             </span>
                           </div>
@@ -210,8 +210,8 @@ export function ReferencesPage({ onPageChange }: ReferencesPageProps) {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-12 bg-[#0680d2] text-white hover:bg-[#0680d2]/90" />
-            <CarouselNext className="hidden md:flex -right-12 bg-[#0680d2] text-white hover:bg-[#0680d2]/90" />
+            {/* <CarouselPrevious className="hidden md:flex -left-12 bg-[#0680d2] text-white hover:bg-[#0680d2]/90" />
+            <CarouselNext className="hidden md:flex -right-12 bg-[#0680d2] text-white hover:bg-[#0680d2]/90" /> */}
           </Carousel>
         </div>
       </section>
@@ -231,17 +231,17 @@ export function ReferencesPage({ onPageChange }: ReferencesPageProps) {
               }
             </h2>
             <p className="text-xl text-white mb-8">
-              {language === 'fr' ? 
-                "Découvrez pourquoi plus de 150 entreprises nous font confiance" : 
-                "Discover why more than 150 companies trust us"
+              {language === 'fr' ?
+                "Découvrez pourquoi plusieurs entreprises nous font confiance" : 
+                "Discover why many companies trust us"
               }
             </p>
             <Button 
             size="lg"
-            onClick={() => onPageChange('quote')}
+            onClick={() => onPageChange('contact')}
             className="bg-yellow-500 hover:bg-yellow-600 text-black"
           >
-            {t('common.getQuote')}
+            {t('common.contact')}
           </Button>
           </motion.div>
         </div>

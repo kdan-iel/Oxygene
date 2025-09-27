@@ -161,7 +161,7 @@ export function ServicesPage({
         backgroundImage="https://images.unsplash.com/photo-1648469941040-b1c1fac2d4b2?w=1200"
         actions={[
           {
-            label: t("common.getQuote"),
+            label: t("common.contact"),
             onClick: () => onPageChange("quote"),
             className: "bg-yellow-500 hover:bg-yellow-600 text-black",
           }
@@ -221,7 +221,7 @@ export function ServicesPage({
                           variant="outline"
                           className="w-full"
                         >
-                          {t("common.getQuote")}{" "}
+                          {t("common.contact")}{" "}
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
                       </CardContent>
@@ -372,7 +372,7 @@ export function ServicesPage({
               onClick={() => onPageChange("quote")}
               className="bg-accent hover:bg-accent/90"
             >
-              {t("common.getQuote")}
+              {t("common.contact")}
             </Button>
           </div>
         </div>

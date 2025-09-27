@@ -118,8 +118,8 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
         />
 
       {/* Why join us */}
-      <section className="py-16 bg-[#f5f7fa]">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -148,10 +148,10 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-[#0680d2] text-white rounded-full mb-4">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full mb-4">
                     <IconComponent size={24} />
                   </div>
-                  <h3 className="text-xl font-semibold text-[#333333] mb-3">{benefit.title}</h3>
+                  <h3 className="text-xl font-semibold text-bg-neutral-800 mb-3">{benefit.title}</h3>
                   <p className="text-gray-600">{benefit.description}</p>
                 </motion.div>
               );
@@ -162,14 +162,14 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
 
       {/* Job Offers */}
       <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="container max-w-6xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6">
+            <h2 className="text-4xl md:text-4xl font-bold text-bg-neutral-800 mb-6">
               {language === 'fr' ? "Nos offres d'emploi" : "Our job offers"}
             </h2>
             <p className="text-xl text-gray-600">
@@ -180,7 +180,7 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-8">
             {jobs.map((job, index) => (
               <motion.div
                 key={index}
@@ -191,8 +191,8 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
                 <Card className="h-full shadow-lg hover:shadow-xl transition-all duration-300 border-0">
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                      <h3 className="text-xl font-semibold text-[#333333]">{job.title}</h3>
-                      <span className="bg-[#0680d2]/10 text-[#0680d2] px-3 py-1 rounded-full text-sm">
+                      <h3 className="text-xl font-semibold text-bg-neutral-800">{job.title}</h3>
+                      <span className="bg-gray-100 text-primary px-3 py-1 rounded-full text-sm">
                         {job.type}
                       </span>
                     </div>
@@ -210,15 +210,15 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
                       </h4>
                       <ul className="space-y-2">
                         {job.requirements.map((req, reqIndex) => (
-                          <li key={reqIndex} className="flex items-start">
-                            <span className="w-2 h-2 bg-[#0680d2] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <li key={reqIndex} className="flex space-x-2 items-start">
+                            <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                             <span className="text-gray-600">{req}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                     
-                    <Button className="w-full bg-[#0680d2] hover:bg-[#0680d2]/90 text-white">
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                       <Send size={16} className="mr-2" />
                       {language === 'fr' ? "Postuler" : "Apply"}
                     </Button>
@@ -231,15 +231,15 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
       </section>
 
       {/* Application Process */}
-      <section className="py-16 bg-[#f5f7fa]">
-        <div className="max-w-4xl mx-auto px-4">
+      <section className="py-16 bg-gray-100">
+        <div className="container max-w-4xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6">
+            <h2 className="text-4xl md:text-4xl font-bold text-[#333333] mb-6">
               {language === 'fr' ? "Comment postuler ?" : "How to apply?"}
             </h2>
             <p className="text-xl text-gray-600">
@@ -281,7 +281,7 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#0680d2] text-white rounded-full text-2xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full text-2xl font-bold mb-4">
                   {step.step}
                 </div>
                 <h3 className="text-xl font-semibold text-[#333333] mb-3">{step.title}</h3>

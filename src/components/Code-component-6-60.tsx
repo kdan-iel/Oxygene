@@ -91,8 +91,8 @@ export function BlogPage({ onPageChange }: BlogPageProps) {
         backgroundImage="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200"
         actions={[
           {
-            label: t('common.getQuote'),
-            onClick: () => onPageChange('quote'),
+            label: t('common.contact'),
+            onClick: () => onPageChange('contact'),
             className: 'bg-yellow-500 hover:bg-yellow-600 text-black'
           }
         ]}

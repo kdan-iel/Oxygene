@@ -40,8 +40,8 @@ export function ContactPage({ onPageChange }: ContactPageProps) {
         backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200"
         actions={[
           {
-            label: t('common.getQuote'),
-            onClick: () => onPageChange('quote'),
+            label: t('common.contact'),
+            onClick: () => onPageChange('contact'),
             className: 'bg-yellow-500 hover:bg-yellow-600 text-black'
           }
         ]}
@@ -214,6 +214,15 @@ export function ContactPage({ onPageChange }: ContactPageProps) {
           <h2 className="text-3xl font-bold text-center mb-8">Notre localisation</h2>
           <div className="bg-gray-300 rounded-lg h-64 flex items-center justify-center">
             <p className="text-gray-600">Carte interactive - 123 Rue de la Propreté, 75001 Paris</p>
+            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.8039883145827!2d1.2043970000000088!3d6.176727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102159b03d8ba009%3A0x49cb277a875520ec!2sOXYGENE%20Hygi%C3%A8ne%20et%20propret%C3%A9!5e0!3m2!1sfr!2sus!4v1758932909424!5m2!1sfr!2sus" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe> */}
           </div>
         </div>
       </section>

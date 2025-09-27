@@ -102,7 +102,7 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
        actions={[
           {
             label: "Nous Contacter",
-            onClick: () => onPageChange("quote"),
+            onClick: () => onPageChange("contact"),
             className: "bg-yellow-500 hover:bg-yellow-600 text-black",
           }
         ]}
@@ -110,8 +110,8 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
         />
 
       {/* Filter Section */}
-      <section className="py-8 bg-[#f5f7fa]">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="py-8 h-24 flex items-center bg-gray-100">
+        <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center text-gray-600 mr-4">
               <Filter size={20} className="mr-2" />
@@ -123,8 +123,8 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
                 onClick={() => setSelectedCategory(category.id)}
                 variant={selectedCategory === category.id ? "default" : "outline"}
                 className={selectedCategory === category.id 
-                  ? "bg-[#0680d2] text-white" 
-                  : "border-[#0680d2] text-[#0680d2] hover:bg-[#0680d2] hover:text-white"
+                  ? "bg-primary text-white" 
+                  : "border-primary text-primary hover:bg-primary hover:text-white"
                 }
               >
                 {category.name}
@@ -135,8 +135,8 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -198,10 +198,6 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
                             <Eye size={16} className="mr-2" />
                             {language === 'fr' ? 'Voir' : 'View'}
                           </Button>
-                          <Button size="sm" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
-                            <Download size={16} className="mr-2" />
-                            {language === 'fr' ? 'Télécharger' : 'Download'}
-                          </Button>
                         </div>
                       </div>
                     </div>
@@ -228,7 +224,7 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
       </section>
 
       {/* Statistics */}
-      <section className="py-16 bg-[#f5f7fa]">
+      <section className="py-16 bg-gray-100">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -236,7 +232,7 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6">
+            <h2 className="text-4xl md:text-4xl font-bold text-[#333333] mb-6">
               {language === 'fr' ? "Nos chiffres" : "Our numbers"}
             </h2>
           </motion.div>
@@ -254,7 +250,7 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <div className="text-3xl font-bold text-[#0680d2] mb-2">{stat.value}</div>
+                <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </motion.div>
             ))}

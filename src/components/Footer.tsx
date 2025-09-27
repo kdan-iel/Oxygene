@@ -15,14 +15,14 @@ export function Footer({ onPageChange }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">Oxygène</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Oxygène Hygiène et Propreté</h3>
             <p className="text-gray-300 mb-4">
               {t('footer.description')}
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Linkedin className="h-5 w-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
+              <Facebook className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
+              <Twitter className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
+              <Linkedin className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
             </div>
           </div>
 
@@ -33,7 +33,7 @@ export function Footer({ onPageChange }: FooterProps) {
               <li>
                 <button 
                   onClick={() => onPageChange('home')}
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white hover:scale-105 cursor-pointer transition-colors"
                 >
                   {t('nav.home')}
                 </button>
@@ -41,7 +41,7 @@ export function Footer({ onPageChange }: FooterProps) {
               <li>
                 <button 
                   onClick={() => onPageChange('services')}
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white hover:scale-105 cursor-pointer transition-colors"
                 >
                   {t('nav.services')}
                 </button>
@@ -49,7 +49,7 @@ export function Footer({ onPageChange }: FooterProps) {
               <li>
                 <button 
                   onClick={() => onPageChange('about')}
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white hover:scale-105 cursor-pointer transition-colors"
                 >
                   {t('nav.about')}
                 </button>
@@ -57,7 +57,7 @@ export function Footer({ onPageChange }: FooterProps) {
               <li>
                 <button 
                   onClick={() => onPageChange('contact')}
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white hover:scale-105 cursor-pointer transition-colors"
                 >
                   {t('nav.contact')}
                 </button>
@@ -69,12 +69,30 @@ export function Footer({ onPageChange }: FooterProps) {
           <div>
             <h4 className="font-semibold mb-4">{t('common.our-services')}</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>{t('services.offices')}</li>
-              <li>{t('services.commercial')}</li>
-              <li>{t('services.buildings')}</li>
-              <li>{t('services.homes')}</li>
-              <li>{t('services.windows')}</li>
-              <li>{t('services.carpet')}</li>
+              <li
+                onClick={() => onPageChange('services')}
+                className="hover:text-white hover:scale-105 cursor-pointer transition-colors"
+              >{t('services.offices')}</li>
+              <li
+                onClick={() => onPageChange('services')}
+                className="hover:text-white hover:scale-105 cursor-pointer transition-colors"
+              >{t('services.commercial')}</li>
+              <li
+                onClick={() => onPageChange('services')}
+                className="hover:text-white hover:scale-105 cursor-pointer transition-colors"
+              >{t('services.buildings')}</li>
+              <li
+                onClick={() => onPageChange('services')}
+                className="hover:text-white hover:scale-105 cursor-pointer transition-colors"
+              >{t('services.homes')}</li>
+              <li
+                onClick={() => onPageChange('services')}
+                className="hover:text-white hover:scale-105 cursor-pointer transition-colors"
+              >{t('services.windows')}</li>
+              <li
+                onClick={() => onPageChange('services')}
+                className="hover:text-white hover:scale-105 cursor-pointer transition-colors"
+              >{t('services.carpet')}</li>
             </ul>
           </div>
 

@@ -10,7 +10,10 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-const translations = {
+const translations: {
+  fr: { [key: string]: string };
+  en: { [key: string]: string };
+} = {
   fr: {
     // Navigation
     'nav.home': 'Accueil',
@@ -21,11 +24,10 @@ const translations = {
     'nav.gallery': 'Galerie',
     'nav.careers': 'Emploi',
     'nav.contact': 'Contact',
-    'nav.quote': 'Demander un devis',
+    'nav.cta': 'Nous contacter',
     
     // Common
     'common.readMore': 'Lire la suite',
-    'common.getQuote': 'Demander un devis',
     'common.contact': 'Nous contacter',
     'common.learn-more': 'En savoir plus',
     'common.our-services': 'Nos services',
@@ -136,11 +138,10 @@ const translations = {
     'nav.gallery': 'Gallery',
     'nav.careers': 'Careers',
     'nav.contact': 'Contact',
-    'nav.quote': 'Get a Quote',
+    'nav.cta': 'Contact us',
     
     // Common
     'common.readMore': 'Read more',
-    'common.getQuote': 'Get a quote',
     'common.contact': 'Contact us',
     'common.learn-more': 'Learn more',
     'common.our-services': 'Our services',
