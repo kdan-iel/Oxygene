@@ -102,7 +102,11 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
        actions={[
           {
             label: "Nous Contacter",
-            onClick: () => onPageChange("contact"),
+            onClick: () =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                ),
             className: "bg-yellow-500 hover:bg-yellow-600 text-black",
           }
         ]}

@@ -162,7 +162,11 @@ export function ServicesPage({
         actions={[
           {
             label: t("common.contact"),
-            onClick: () => onPageChange("quote"),
+            onClick: () =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                ),
             className: "bg-yellow-500 hover:bg-yellow-600 text-black",
           }
         ]}
@@ -217,7 +221,11 @@ export function ServicesPage({
                           )}
                         </ul>
                         <Button
-                          onClick={() => onPageChange("quote")}
+                          onClick={() =>
+                            window.open(
+                              "https://wa.me/22896130264",
+                              "_blank"
+                          )}
                           variant="outline"
                           className="w-full"
                         >
@@ -367,12 +375,16 @@ export function ServicesPage({
             Contactez-nous pour un devis gratuit et personnalisé
           </p>
           <div className="space-x-4">
-            <Button
-              size="lg"
-              onClick={() => onPageChange("quote")}
-              className="bg-accent hover:bg-accent/90"
+            <Button 
+              size="lg" 
+              onClick={() =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                )}
+              className="bg-yellow-500 hover:bg-yellow-600 text-black border-0"
             >
-              {t("common.contact")}
+              {t('common.contact')}
             </Button>
           </div>
         </div>

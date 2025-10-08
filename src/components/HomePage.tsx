@@ -168,7 +168,11 @@ export function HomePage({ onPageChange }: HomePageProps) {
                   </Button>
                   <Button 
                     size="lg" 
-                    onClick={() => onPageChange('contact')}
+                    onClick={() =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                  )}
                     className="bg-yellow-500 hover:bg-yellow-600 text-black border-0"
                   >
                     {t('common.contact')}
@@ -364,9 +368,13 @@ export function HomePage({ onPageChange }: HomePageProps) {
             {t('finalcta.subtitle')}
           </p>
           <Button 
-            size="lg"
-            onClick={() => onPageChange('contact')}
-            className="bg-yellow-500 hover:bg-yellow-600 text-black"
+            size="lg" 
+            onClick={() =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                )}
+            className="bg-yellow-500 hover:bg-yellow-600 text-black border-0"
           >
             {t('common.contact')}
           </Button>

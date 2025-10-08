@@ -73,19 +73,23 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
             <div className="hidden md:flex space-x-6">
               <div className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
                 <Phone className="h-4 w-4" />
-                <span>+33 1 23 45 67 89</span>
+                <span>+228 93252996 / +228 96130264</span>
               </div>
               <div className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
                 <Mail className="h-4 w-4" />
-                <span>contact@oxygene-proprete.fr</span>
+                <span>oxygenecontact@yahoo.com</span>
               </div>
             </div>
 
             {/* CTA Button */}
             <div className="hidden lg:block">
               <Button 
-                onClick={() => onPageChange('contact')}
-                className={`bg-yellow-500 hover:bg-yellow-600 text-black font-medium transition-all duration-200 ${
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                )}
+                className={`bg-yellow-500 hover:bg-yellow-600 text-black font-medium transition-all duration-200 hover:scale-105 ${
                   isScrolled ? 'px-4 py-2 text-sm' : 'px-6 py-3'
                 }`}
                 style={{

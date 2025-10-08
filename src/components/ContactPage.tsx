@@ -41,7 +41,11 @@ export function ContactPage({ onPageChange }: ContactPageProps) {
         actions={[
           {
             label: t('common.contact'),
-            onClick: () => onPageChange('contact'),
+            onClick: () =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                ),
             className: 'bg-yellow-500 hover:bg-yellow-600 text-black'
           }
         ]}
@@ -61,7 +65,7 @@ export function ContactPage({ onPageChange }: ContactPageProps) {
                       <MapPin className="h-6 w-6 text-primary mt-1" />
                       <div>
                         <h3 className="font-semibold mb-2">{t('contact.address')}</h3>
-                        <p className="text-gray-600">123 Rue de la Propreté<br />75001 Paris, France</p>
+                        <p className="text-gray-600">{t('footer.description')}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -73,8 +77,8 @@ export function ContactPage({ onPageChange }: ContactPageProps) {
                       <Phone className="h-6 w-6 text-primary mt-1" />
                       <div>
                         <h3 className="font-semibold mb-2">{t('contact.phone')}</h3>
-                        <p className="text-gray-600">+33 1 23 45 67 89</p>
-                        <p className="text-sm text-gray-500">Urgences 24h/24</p>
+                        <p className="text-gray-600">+228 93252996 / +228 96130264</p>
+                        {/* <p className="text-sm text-gray-500">Urgences 24h/24</p> */}
                       </div>
                     </div>
                   </CardContent>
@@ -86,8 +90,8 @@ export function ContactPage({ onPageChange }: ContactPageProps) {
                       <Mail className="h-6 w-6 text-primary mt-1" />
                       <div>
                         <h3 className="font-semibold mb-2">{t('contact.email')}</h3>
-                        <p className="text-gray-600">contact@oxygene-proprete.fr</p>
-                        <p className="text-sm text-gray-500">Réponse sous 2h</p>
+                        <p className="text-gray-600">oxygenecontact@yahoo.com</p>
+                        <p className="text-sm text-gray-500">Réponse sous 24h</p>
                       </div>
                     </div>
                   </CardContent>

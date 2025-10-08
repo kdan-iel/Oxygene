@@ -106,7 +106,11 @@ export function ReferencesPage({ onPageChange }: ReferencesPageProps) {
         actions={[
           {
             label: t("common.contact"),
-            onClick: () => onPageChange("quote"),
+            onClick: () =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                ),
             className: "bg-yellow-500 hover:bg-yellow-600 text-black",
           }
         ]}
@@ -238,7 +242,11 @@ export function ReferencesPage({ onPageChange }: ReferencesPageProps) {
             </p>
             <Button 
             size="lg"
-            onClick={() => onPageChange('contact')}
+            onClick={() =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                )}
             className="bg-yellow-500 hover:bg-yellow-600 text-black"
           >
             {t('common.contact')}

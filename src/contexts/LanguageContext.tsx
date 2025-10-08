@@ -84,7 +84,7 @@ const translations: {
     'services.homes': 'Nettoyage de maisons',
     
     // About
-    'about.title': 'À propos d\'Oxygène',
+    'about.title': 'À propos de Oxygène',
     'about.subtitle': 'Notre histoire, notre équipe, nos engagements',
     'about.history.title': 'Notre histoire',
     'about.history.content': 'Fondée en 2008, Oxygène s\'est imposée comme un leader dans le domaine du nettoyage professionnel. Notre engagement envers la qualité et l\'innovation nous a permis de développer une clientèle fidèle.',

@@ -110,7 +110,11 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
         actions={[
           {
             label: "Nous Contacter",
-            onClick: () => onPageChange("quote"),
+            onClick: () =>
+                  window.open(
+                    "https://wa.me/22896130264",
+                    "_blank"
+                ),
             className: "bg-yellow-500 hover:bg-yellow-600 text-black",
           }
         ]}
