@@ -18,7 +18,7 @@ export function AboutPage({ onPageChange }: AboutPageProps) {
       <AnimatedHero
         title={t('about.title')}
         subtitle={t('about.subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200"
+        backgroundImage="/assets/images/teamwork.png"
         actions={[
           {
             label: t('common.contact'),

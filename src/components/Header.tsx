@@ -64,7 +64,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
           opacity: topBarOpacity,
           height: topBarHeight,
           overflow: 'hidden',
-          background: 'linear-gradient(135deg, #0680d2 0%, #0567b8 50%, #0680d2 100%)',
+          background: 'linear-gradient(135deg, #13008B 0%, #2B7DCD 50%, #13008B 100%)',
           boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.1), 0 1px 3px rgba(6,128,210,0.3)'
         }}
       >

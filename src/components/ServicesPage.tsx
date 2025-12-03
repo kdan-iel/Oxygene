@@ -36,7 +36,7 @@ export function ServicesPage({
       description:
         "Nettoyage complet des espaces de travail, bureaux individuels et open-spaces. Entretien quotidien, hebdomadaire ou selon vos besoins.",
       image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600",
+        "/assets/images/office_cleaning_team.png",
       features: [
         "Nettoyage des postes de travail",
         "Vidage des corbeilles",
@@ -51,7 +51,7 @@ export function ServicesPage({
       description:
         "Solutions adaptées aux commerces, restaurants, magasins et centres commerciaux. Image impeccable pour vos clients.",
       image:
-        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600",
+      "/assets/images/man_disposing_trash.jpg",
       features: [
         "Nettoyage des vitrines",
         "Entretien des zones de vente",
@@ -66,7 +66,7 @@ export function ServicesPage({
       description:
         "Entretien complet de bâtiments résidentiels et tertiaires. Parties communes, ascenseurs, halls d'entrée.",
       image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600",
+        "/assets/images/airport_cleaning_team.png",
       features: [
         "Halls et entrées",
         "Escaliers et paliers",
@@ -81,7 +81,7 @@ export function ServicesPage({
       description:
         "Service de ménage résidentiel personnalisé. Maisons, appartements, villas avec attention aux détails.",
       image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+        "/assets/images/indoor_cleaning.png",
       features: [
         "Ménage régulier ou ponctuel",
         "Grand nettoyage de printemps",
@@ -96,7 +96,7 @@ export function ServicesPage({
       description:
         "Nettoyage professionnel de vitres pour immeubles, magasins et résidences. Équipement spécialisé pour tous types de bâtiments.",
       image:
-        "https://images.unsplash.com/photo-1630908650794-e76619014675?w=600",
+        "/assets/images/cleaning_window_man.jpg",
       features: [
         "Vitres en hauteur",
         "Façades vitrées",
@@ -111,7 +111,7 @@ export function ServicesPage({
       description:
         "Nettoyage en profondeur de tapis et moquettes. Techniques professionnelles pour tous types de textiles.",
       image:
-        "https://images.unsplash.com/photo-1625044364652-c841c1ae31b1?w=600",
+        "/assets/images/machine/carpet_cleaner.png",
       features: [
         "Injection-extraction",
         "Nettoyage à sec",
@@ -126,7 +126,7 @@ export function ServicesPage({
       description:
         "Entretien spécialisé des parquets et sols en bois. Nettoyage, cirage et rénovation selon le type de bois.",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600",
+        "/assets/images/machine/monobrush.png",
       features: [
         "Nettoyage adapté au type de bois",
         "Cirage et lustrage",
@@ -141,7 +141,7 @@ export function ServicesPage({
       description:
         "Nettoyage et entretien du marbre et pierres naturelles. Techniques spécialisées pour préserver l'éclat.",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600",
+        "/assets/images/cleaning_man_machine.png",
       features: [
         "Cristallisation du marbre",
         "Polissage professionnel",
@@ -158,7 +158,7 @@ export function ServicesPage({
       <AnimatedHero
         title={t("services.title")}
         subtitle={t("services.subtitle")}
-        backgroundImage="https://images.unsplash.com/photo-1648469941040-b1c1fac2d4b2?w=1200"
+        backgroundImage="/assets/images/office_cleaning_team.png"
         actions={[
           {
             label: t("common.contact"),
@@ -356,7 +356,7 @@ export function ServicesPage({
             </div>
             <div className="relative">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600"
+                src="/assets/images/cleaning_woman_machine2.jpg"
                 alt="Équipe professionnelle de nettoyage"
                 className="rounded-lg shadow-lg"
               />

@@ -26,17 +26,17 @@ export function HomePage({ onPageChange }: HomePageProps) {
 
   const heroSlides = [
     {
-      image: "https://images.unsplash.com/photo-1648469941040-b1c1fac2d4b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBjbGVhbmluZyUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NTczNjMzODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/assets/images/cleaners_group1.png",
       title: t('home.hero.title1'),
       subtitle: t('home.hero.subtitle1')
     },
     {
-      image: "https://images.unsplash.com/photo-1630908650794-e76619014675?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMG1vZGVybiUyMGJ1aWxkaW5nJTIwd2luZG93c3xlbnwxfHx8fDE3NTczNjg0MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/assets/images/cleaning_window_man.jpg",
       title: t('home.hero.title2'),
       subtitle: t('home.hero.subtitle2')
     },
     {
-      image: "https://images.unsplash.com/photo-1625044364652-c841c1ae31b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjYXJwZXQlMjBjbGVhbmluZyUyMHNlcnZpY2V8ZW58MXx8fHwxNzU3MzY4NDE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/assets/images/indoor_cleaning.png",
       title: t('home.hero.title3'),
       subtitle: t('home.hero.subtitle3')
     }
@@ -78,25 +78,25 @@ export function HomePage({ onPageChange }: HomePageProps) {
   const clientLogos = [
     {
       name: 'Terminal De Containers de Lomé',
-      logo: '/assets/ref-lct.png'
+      logo: '/assets/images/references/ref-lct.png'
     },
     {
       name: 'SCAN Togo',
-      logo: '/assets/ref-sacn-togo.jpg' 
+      logo: '/assets/images/references/ref-sacn-togo.jpg' 
     },
     {
       name: 'Cimtogo',
-      logo: '/assets/ref-cimtogo.jpg'
+      logo: '/assets/images/references/ref-cimtogo.jpg'
     },
     {
       name: 'Cofina', 
-      logo: '/assets/ref-cofina.png'
+      logo: '/assets/images/references/ref-cofina.png'
     },
     { name: 'Oryx Energy',
-      logo: '/assets/ref-oryx-energy.jpg'
+      logo: '/assets/images/references/ref-oryx-energy.jpg'
     },
     { name: 'Sunu Assurances',
-      logo: '/assets/ref-sunu.jpg'
+      logo: '/assets/images/references/ref-sunu.jpg'
     }
   ];
 
@@ -104,19 +104,19 @@ export function HomePage({ onPageChange }: HomePageProps) {
     {
       title: '5 conseils pour maintenir un bureau propre',
       excerpt: 'Découvrez nos astuces pour garder votre espace de travail impeccable au quotidien.',
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400",
+      image: "/assets/images/blogpost/office_lady.jpg",
       date: '15 Nov 2024'
     },
     {
       title: 'Produits écologiques : l\'avenir du nettoyage',
       excerpt: 'Comment les produits respectueux de l\'environnement révolutionnent le secteur.',
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+      image: "/assets/images/blogpost/door_handles_cleaning.png",
       date: '12 Nov 2024'
     },
     {
       title: 'Entretien des sols : techniques professionnelles',
       excerpt: 'Les secrets d\'un nettoyage de sol durable et efficace.',
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400",
+      image: "/assets/images/blogpost/hidden_costs.png",
       date: '8 Nov 2024'
     }
   ];

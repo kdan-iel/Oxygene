@@ -95,7 +95,7 @@ export function BlogPage({ onPageChange }: BlogPageProps) {
       <AnimatedHero
         title={t('blog.title')}
         subtitle={t('blog.subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200"
+        backgroundImage="/assets/images/simple_cleaning_woman.png"
         actions={[
           {
             label: t('common.contact'),
