@@ -366,7 +366,10 @@ export function ServicesPage({
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 text-white" 
+      style={{
+        background: 'linear-gradient(135deg, #13008B 0%, #2B7DCD 50%, #13008B 100%)'
+      }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Prêt à commencer ?

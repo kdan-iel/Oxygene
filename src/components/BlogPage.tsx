@@ -201,7 +201,7 @@ export function BlogPage({ onPageChange }: BlogPageProps) {
           )}
 
           {/* Newsletter Signup */}
-          <div className="mt-16">
+          {/* <div className="mt-16">
             <Card className="bg-primary text-white">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4">Restez informé</h3>
@@ -220,7 +220,7 @@ export function BlogPage({ onPageChange }: BlogPageProps) {
                 </div>
               </CardContent>
             </Card>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

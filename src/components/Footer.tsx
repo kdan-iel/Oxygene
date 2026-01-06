@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram} from 'lucide-react';
 
 interface FooterProps {
   onPageChange: (page: string) => void;
@@ -21,8 +21,9 @@ export function Footer({ onPageChange }: FooterProps) {
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
+              <Instagram className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
               <Linkedin className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
+              {/* <Tiktok className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" /> */}
             </div>
           </div>
 
@@ -52,6 +53,22 @@ export function Footer({ onPageChange }: FooterProps) {
                   className="text-gray-300 hover:text-white hover:scale-105 cursor-pointer transition-colors"
                 >
                   {t('nav.about')}
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => onPageChange('blog')}
+                  className="text-gray-300 hover:text-white hover:scale-105 cursor-pointer transition-colors"
+                >
+                  {t('nav.blog')}
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => onPageChange('gallery')}
+                  className="text-gray-300 hover:text-white hover:scale-105 cursor-pointer transition-colors"
+                >
+                  {t('nav.gallery')}
                 </button>
               </li>
               <li>

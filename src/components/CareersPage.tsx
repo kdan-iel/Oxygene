@@ -33,44 +33,44 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
         "Punctuality and reliability"
       ]
     },
-    {
-      title: language === 'fr' ? "Chef d'équipe nettoyage (H/F)" : "Cleaning Team Leader (M/F)",
-      location: language === 'fr' ? "Région parisienne" : "Paris region",
-      type: language === 'fr' ? "CDI" : "Permanent contract",
-      description: language === 'fr' ? 
-        "Encadrez une équipe d'agents de nettoyage et assurez la qualité des prestations." : 
-        "Supervise a team of cleaning agents and ensure the quality of services.",
-      requirements: language === 'fr' ? [
-        "Expérience en encadrement d'équipe",
-        "Connaissance des techniques de nettoyage",
-        "Leadership et communication",
-        "Permis B requis"
-      ] : [
-        "Experience in team management",
-        "Knowledge of cleaning techniques",
-        "Leadership and communication",
-        "Driving license required"
-      ]
-    },
-    {
-      title: language === 'fr' ? "Technicien vitres (H/F)" : "Window Technician (M/F)",
-      location: language === 'fr' ? "Paris" : "Paris",
-      type: language === 'fr' ? "CDD" : "Fixed-term contract",
-      description: language === 'fr' ? 
-        "Spécialisez-vous dans le nettoyage de vitres en hauteur et surfaces vitrées." : 
-        "Specialize in cleaning windows at height and glass surfaces.",
-      requirements: language === 'fr' ? [
-        "Expérience en nettoyage de vitres",
-        "Aptitude au travail en hauteur",
-        "Certificat médical obligatoire",
-        "Rigueur et précision"
-      ] : [
-        "Experience in window cleaning",
-        "Ability to work at height",
-        "Medical certificate required",
-        "Rigor and precision"
-      ]
-    }
+    // {
+    //   title: language === 'fr' ? "Chef d'équipe nettoyage (H/F)" : "Cleaning Team Leader (M/F)",
+    //   location: language === 'fr' ? "Région parisienne" : "Paris region",
+    //   type: language === 'fr' ? "CDI" : "Permanent contract",
+    //   description: language === 'fr' ? 
+    //     "Encadrez une équipe d'agents de nettoyage et assurez la qualité des prestations." : 
+    //     "Supervise a team of cleaning agents and ensure the quality of services.",
+    //   requirements: language === 'fr' ? [
+    //     "Expérience en encadrement d'équipe",
+    //     "Connaissance des techniques de nettoyage",
+    //     "Leadership et communication",
+    //     "Permis B requis"
+    //   ] : [
+    //     "Experience in team management",
+    //     "Knowledge of cleaning techniques",
+    //     "Leadership and communication",
+    //     "Driving license required"
+    //   ]
+    // },
+    // {
+    //   title: language === 'fr' ? "Technicien vitres (H/F)" : "Window Technician (M/F)",
+    //   location: language === 'fr' ? "Paris" : "Paris",
+    //   type: language === 'fr' ? "CDD" : "Fixed-term contract",
+    //   description: language === 'fr' ? 
+    //     "Spécialisez-vous dans le nettoyage de vitres en hauteur et surfaces vitrées." : 
+    //     "Specialize in cleaning windows at height and glass surfaces.",
+    //   requirements: language === 'fr' ? [
+    //     "Expérience en nettoyage de vitres",
+    //     "Aptitude au travail en hauteur",
+    //     "Certificat médical obligatoire",
+    //     "Rigueur et précision"
+    //   ] : [
+    //     "Experience in window cleaning",
+    //     "Ability to work at height",
+    //     "Medical certificate required",
+    //     "Rigor and precision"
+    //   ]
+    // }
   ];
 
   const benefits = [
@@ -196,14 +196,14 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                       <h3 className="text-xl font-semibold text-bg-neutral-800">{job.title}</h3>
-                      <span className="bg-gray-100 text-primary px-3 py-1 rounded-full text-sm">
+                      {/* <span className="bg-gray-100 text-primary px-3 py-1 rounded-full text-sm">
                         {job.type}
-                      </span>
+                      </span> */}
                     </div>
                     
                     <div className="flex items-center text-gray-600 mb-4">
-                      <MapPin size={16} className="mr-2" />
-                      <span>{job.location}</span>
+                      {/* <MapPin size={16} className="mr-2" />
+                      <span>{job.location}</span> */}
                     </div>
                     
                     <p className="text-gray-600 mb-6">{job.description}</p>
@@ -224,7 +224,7 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
                     
                     <Button className="w-full bg-primary hover:bg-primary/90 text-white">
                       <Send size={16} className="mr-2" />
-                      {language === 'fr' ? "Postuler" : "Apply"}
+                      {language === 'fr' ? "Candidature Spontanée" : "Spontaneous application"}
                     </Button>
                   </CardContent>
                 </Card>

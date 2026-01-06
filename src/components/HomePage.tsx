@@ -219,26 +219,40 @@ export function HomePage({ onPageChange }: HomePageProps) {
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">{t('home.values.title')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center-safe" >
             <Card className="text-center p-6 border-0 shadow-lg">
               <CardContent className="pt-6">
                 <Sparkles className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{t('home.values.quality')}</h3>
-                <p className="text-gray-600">{t('home.values.quality-desc')}</p>
+                <h3 className="text-xl font-semibold mb-2">{t('home.values.trust')}</h3>
+                <p className="text-gray-600">{t('home.values.trust-desc')}</p>
               </CardContent>
             </Card>
             <Card className="text-center p-6 border-0 shadow-lg">
               <CardContent className="pt-6">
                 <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{t('home.values.reliability')}</h3>
-                <p className="text-gray-600">{t('home.values.reliability-desc')}</p>
+                <h3 className="text-xl font-semibold mb-2">{t('home.values.respect')}</h3>
+                <p className="text-gray-600">{t('home.values.respect-desc')}</p>
               </CardContent>
             </Card>
             <Card className="text-center p-6 border-0 shadow-lg">
               <CardContent className="pt-6">
                 <Leaf className="h-12 w-12 text-accent mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{t('home.values.eco')}</h3>
-                <p className="text-gray-600">{t('home.values.eco-desc')}</p>
+                <h3 className="text-xl font-semibold mb-2">{t('home.values.passion')}</h3>
+                <p className="text-gray-600">{t('home.values.passion-desc')}</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6 border-0 shadow-lg">
+              <CardContent className="pt-6">
+                <Leaf className="h-12 w-12 text-accent mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-2">{t('home.values.loyalty')}</h3>
+                <p className="text-gray-600">{t('home.values.loyalty-desc')}</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6 border-0 shadow-lg">
+              <CardContent className="pt-6">
+                <Leaf className="h-12 w-12 text-accent mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-2">{t('home.values.teamwork')}</h3>
+                <p className="text-gray-600">{t('home.values.teamwork-desc')}</p>
               </CardContent>
             </Card>
           </div>
@@ -278,7 +292,7 @@ export function HomePage({ onPageChange }: HomePageProps) {
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">{t('home.why.title')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center">
               <Award className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-primary mb-2">15+</h3>
@@ -289,11 +303,11 @@ export function HomePage({ onPageChange }: HomePageProps) {
               <h3 className="text-2xl font-bold text-accent mb-2">✓</h3>
               <p className="text-gray-600">{t('home.why.certified')}</p>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <Clock className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-primary mb-2">7/7</h3>
               <p className="text-gray-600">{t('home.why.available')}</p>
-            </div>
+            </div> */}
             <div className="text-center">
               <Shield className="h-12 w-12 text-accent mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-accent mb-2">100%</h3>
@@ -361,7 +375,10 @@ export function HomePage({ onPageChange }: HomePageProps) {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 text-white" 
+      style={{
+        background: 'linear-gradient(135deg, #13008B 0%, #2B7DCD 50%, #13008B 100%)'
+      }}>
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">{t('finalcta.title')}</h2>
           <p className="text-xl mb-8 opacity-90">

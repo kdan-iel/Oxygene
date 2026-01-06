@@ -31,8 +31,8 @@ export default function App() {
         return <BlogPage onPageChange={setCurrentPage} />;
       case 'contact':
         return <ContactPage onPageChange={setCurrentPage} />;
-      case 'references':
-        return <ReferencesPage onPageChange={setCurrentPage} />;
+      // case 'references':
+      //   return <ReferencesPage onPageChange={setCurrentPage} />;
       case 'gallery':
         return <GalleryPage onPageChange={setCurrentPage} />;
       case 'careers':

@@ -52,12 +52,16 @@ const translations: {
     'home.hero.cta': 'Découvrir nos services',
     
     'home.values.title': 'Nos valeurs',
-    'home.values.quality': 'Qualité',
-    'home.values.quality-desc': 'Excellence dans chaque intervention',
-    'home.values.reliability': 'Fiabilité',
-    'home.values.reliability-desc': 'Service ponctuel et professionnel',
-    'home.values.eco': 'Écologie',
-    'home.values.eco-desc': 'Produits respectueux de l\'environnement',
+    'home.values.trust': 'Confiance',
+    'home.values.trust-desc': 'Des relations solides avec clients, partenaires et collaborateurs',
+    'home.values.respect': 'Respect',
+    'home.values.respect-desc': 'Nous respectons nos clients, partenaires, équipes et valeurs fondamentales',
+    'home.values.passion': 'Passion',
+    'home.values.passion-desc': 'Nous exerçons nos métiers avec enthousiasme et recherche d\'excellence',
+    'home.values.loyalty': 'Loyauté',
+    'home.values.loyalty-desc': 'Loyauté envers nos clients et nos équipes',
+    'home.values.teamwork': 'Travail d\'équipe',
+    'home.values.teamwork-desc': 'Collaboration et solidarité au sein de l\'équipe',
     
     'home.services.title': 'Nos services',
     'home.services.subtitle': 'Des solutions adaptées à tous vos besoins',
@@ -92,6 +96,7 @@ const translations: {
     'about.team.content': 'Une équipe de professionnels expérimentés et formés aux dernières techniques de nettoyage. Chaque membre de notre équipe partage nos valeurs de qualité et de respect.',
     'about.csr.title': 'Responsabilité sociale',
     'about.csr.content': 'Nous nous engageons à utiliser des produits écologiques et à adopter des pratiques durables pour préserver l\'environnement.',
+    'about.csr.button': 'En savoir plus',
     
     // Blog
     'blog.title': 'Nos astuces',
@@ -164,12 +169,16 @@ const translations: {
     'home.hero.cta': 'Discover our services',
     
     'home.values.title': 'Our values',
-    'home.values.quality': 'Quality',
-    'home.values.quality-desc': 'Excellence in every intervention',
-    'home.values.reliability': 'Reliability',
-    'home.values.reliability-desc': 'Punctual and professional service',
-    'home.values.eco': 'Ecology',
-    'home.values.eco-desc': 'Environmentally friendly products',
+    'home.values.trust': 'Professionalism',
+    'home.values.trust-desc': 'Punctual and professional service',
+    'home.values.respect': 'Respect',
+    'home.values.respect-desc': 'Respect of the environment and clients',
+    'home.values.passion': 'Passion',
+    'home.values.passion-desc': 'Passion for cleaning and excellence',
+    'home.values.loyalty': 'Loyalty',
+    'home.values.loyalty-desc': 'Loyalty towards our clients and teams',
+    'home.values.teamwork': 'Teamwork',
+    'home.values.teamwork-desc': 'Collaboration and solidarity within the team',
     
     'home.services.title': 'Our services',
     'home.services.subtitle': 'Solutions adapted to all your needs',
@@ -204,6 +213,7 @@ const translations: {
     'about.team.content': 'A team of experienced professionals trained in the latest cleaning techniques. Each team member shares our values of quality and respect.',
     'about.csr.title': 'Social responsibility',
     'about.csr.content': 'We are committed to using eco-friendly products and adopting sustainable practices to preserve the environment.',
+    'about.csr.button': 'Learn more', 
     
     // Blog
     'blog.title': 'Our tips',

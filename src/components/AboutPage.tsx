@@ -67,7 +67,7 @@ export function AboutPage({ onPageChange }: AboutPageProps) {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 bg-secondary">
+      {/* <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">{t('about.team.title')}</h2>
@@ -109,7 +109,7 @@ export function AboutPage({ onPageChange }: AboutPageProps) {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CSR Section */}
       <section className="py-16">
@@ -117,7 +117,7 @@ export function AboutPage({ onPageChange }: AboutPageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600"
+                src="../../assets/images/mother_charity.jpg"
                 alt="Responsabilité sociale"
                 className="rounded-lg shadow-lg"
               />
@@ -145,6 +145,21 @@ export function AboutPage({ onPageChange }: AboutPageProps) {
                   <div>
                     <h3 className="font-semibold">Certifications</h3>
                     <p className="text-gray-600">ISO 14001 et labels environnementaux</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div>
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://assocoeurhumanitaire.org/",
+                          "_blank"
+                      )
+                    }
+                    className="mt-4 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold rounded-lg"
+                  >
+                    {t('about.csr.button')}
+                  </button>
                   </div>
                 </div>
               </div>

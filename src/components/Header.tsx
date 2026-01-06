@@ -35,7 +35,7 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
     { key: 'services', href: 'services' },
     { key: 'about', href: 'about' },
     { key: 'blog', href: 'blog' },
-    { key: 'references', href: 'references' },
+    // { key: 'references', href: 'references' },
     { key: 'gallery', href: 'gallery' },
     { key: 'careers', href: 'careers' },
     { key: 'contact', href: 'contact' },
