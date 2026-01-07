@@ -98,7 +98,7 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
         //   "Explorez nos projets de nettoyage et découvrez la transformation de nos espaces clients." : 
         //   "Explore our cleaning projects and discover the transformation of our client spaces."
         // }
-        backgroundImage="../../public/assets/images/oxygene_team.jpg"
+        backgroundImage="../../assets/images/oxygene_team.jpg"
        actions={[
           {
             label: "Nous Contacter",

@@ -106,7 +106,7 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
         //   "Oxygene recrute régulièrement des professionnels motivés pour renforcer ses équipes. Découvrez nos opportunités." : 
         //   "Oxygene regularly recruits motivated professionals to strengthen its teams. Discover our opportunities."
         // }
-        backgroundImage="../../public/assets/images/job_application.png"
+        backgroundImage="../../assets/images/job_application.png"
         actions={[
           {
             label: "Nous Contacter",

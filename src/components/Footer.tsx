@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram, Goal} from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { byPrefixAndName } from '@awesome.me/kit-cb8c25bf88/icons'
+// import { byPrefixAndName } from '@awesome.me/kit-cb8c25bf88/icons'
 
 interface FooterProps {
   onPageChange: (page: string) => void;

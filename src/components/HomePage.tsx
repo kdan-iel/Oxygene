@@ -115,13 +115,13 @@ export function HomePage({ onPageChange }: HomePageProps) {
     {
       title: 'Entretien des sols : techniques professionnelles',
       excerpt: 'Les secrets d\'un nettoyage de sol durable et efficace selon le type de revêtement.',
-      image: "../../public/assets/images/cleaning_man_machine.png",
+      image: "../../assets/images/cleaning_man_machine.png",
       date: '8 Nov 2024',
     },
     {
       title: 'Nettoyage après travaux : guide complet',
       excerpt: 'Tout ce qu\'il faut savoir pour un nettoyage efficace après des travaux de rénovation.',
-      image: "../../public/assets/images/teamwork.png",
+      image: "../../assets/images/teamwork.png",
       date: '5 Nov 2024',
     },
   ];

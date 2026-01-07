@@ -57,7 +57,7 @@ export function AboutPage({ onPageChange }: AboutPageProps) {
             </div>
             <div className="relative">
               <ImageWithFallback
-                src="../../public/assets/images/oxygene_team.jpg"
+                src="../../assets/images/oxygene_team.jpg"
                 alt="Histoire de l'entreprise"
                 className="rounded-lg shadow-lg"
               />
