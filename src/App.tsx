@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -13,11 +13,21 @@ import { AnimatedHero } from './components/AnimatedHero';
 import { ReferencesPage } from './components/ReferencesPage';
 import { GalleryPage } from './components/GalleryPage';
 import { CareersPage } from './components/CareersPage';
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+config.autoAddCss = false
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
-  const renderPage = () => {
+// Scroll to top whenever the current page changes
+useEffect(() => {
+  if (typeof window !== 'undefined') {
+    try { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); } catch { window.scrollTo(0, 0); }
+  }
+}, [currentPage]);
+''
+ const renderPage = () => {
     switch (currentPage) {
       case 'home':
         return <HomePage onPageChange={setCurrentPage} />;

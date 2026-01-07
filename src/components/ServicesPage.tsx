@@ -301,7 +301,7 @@ export function ServicesPage({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Pourquoi choisir Oxygène ?
+                Pourquoi choisir Oxygene ?
               </h2>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">

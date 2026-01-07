@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Menu, X, Phone, Mail, Languages } from 'lucide-react';
-import oxygeneLogoImg from '../assets/logo_oxygene.png';
+import oxygeneLogoImg from '../../public/assets/logo_oxygene.png';
 
 interface HeaderProps {
   currentPage: string;
@@ -73,11 +73,12 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
             <div className="hidden md:flex space-x-6">
               <div className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
                 <Phone className="h-4 w-4" />
-                <span>+228 93252996 / +228 96130264</span>
+                <a href="tel:0022893252996">+228 93252996 / </a>
+                <a href="tel:0022896130264">+228 96130264</a>
               </div>
               <div className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
                 <Mail className="h-4 w-4" />
-                <span>oxygenecontact@yahoo.com</span>
+                <a href="mailto:oxygenecontact@yahoo.com">oxygenecontact@yahoo.com</a>
               </div>
             </div>
 
@@ -119,9 +120,9 @@ export function Header({ currentPage, onPageChange }: HeaderProps) {
           >
             <img 
               src={oxygeneLogoImg}
-              alt="Oxygène - Hygiène et propreté"
-              className={`transition-all duration-300 ${
-                isScrolled ? 'h-14' : 'h-16'
+              alt="Oxygene - Hygiène et propreté"
+              className={`transition-all duration-300 max-h-[80px] ${
+                isScrolled ? 'h-12' : 'h-16'
               }`}
               style={{
                 filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))'

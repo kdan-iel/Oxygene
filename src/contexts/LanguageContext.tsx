@@ -44,7 +44,7 @@ const translations: {
 
     // Homepage
     'home.hero.title1': 'Solutions de nettoyage professionnelles',
-    'home.hero.subtitle1': 'Oxygène, votre partenaire de confiance pour tous vos besoins de nettoyage professionnel. Qualité, fiabilité et respect de l\'environnement.',
+    'home.hero.subtitle1': 'Oxygene, votre partenaire de confiance pour tous vos besoins de nettoyage professionnel. Qualité, fiabilité et respect de l\'environnement.',
     'home.hero.title2': 'Nettoyage de vitres professionnel',
     'home.hero.subtitle2': 'Des vitres impeccables pour une image parfaite de votre entreprise',
     'home.hero.title3': 'Expertise en nettoyage de tapis',
@@ -88,10 +88,10 @@ const translations: {
     'services.homes': 'Nettoyage de maisons',
     
     // About
-    'about.title': 'À propos de Oxygène',
+    'about.title': 'À propos de Oxygene',
     'about.subtitle': 'Notre histoire, notre équipe, nos engagements',
     'about.history.title': 'Notre histoire',
-    'about.history.content': 'Fondée en 2008, Oxygène s\'est imposée comme un leader dans le domaine du nettoyage professionnel. Notre engagement envers la qualité et l\'innovation nous a permis de développer une clientèle fidèle.',
+    'about.history.content': 'Fondée en 2008, Oxygene s\'est imposée comme un leader dans le domaine du nettoyage professionnel. Notre engagement envers la qualité et l\'innovation nous a permis de développer une clientèle fidèle.',
     'about.team.title': 'Notre équipe',
     'about.team.content': 'Une équipe de professionnels expérimentés et formés aux dernières techniques de nettoyage. Chaque membre de notre équipe partage nos valeurs de qualité et de respect.',
     'about.csr.title': 'Responsabilité sociale',
@@ -161,7 +161,7 @@ const translations: {
 
     // Homepage
     'home.hero.title1': 'Professional Cleaning Solutions',
-    'home.hero.subtitle1': 'Oxygène, your trusted partner for all your professional cleaning needs. Quality, reliability and environmental respect.',
+    'home.hero.subtitle1': 'Oxygene, your trusted partner for all your professional cleaning needs. Quality, reliability and environmental respect.',
     'home.hero.title2': 'Professional window cleaning',
     'home.hero.subtitle2': 'Spotless windows for a perfect image of your business',
     'home.hero.title3': 'Carpet cleaning expertise',
@@ -205,10 +205,10 @@ const translations: {
     'services.homes': 'House cleaning',
     
     // About
-    'about.title': 'About Oxygène',
+    'about.title': 'About Oxygene',
     'about.subtitle': 'Our story, our team, our commitments',
     'about.history.title': 'Our history',
-    'about.history.content': 'Founded in 2008, Oxygène has established itself as a leader in professional cleaning. Our commitment to quality and innovation has allowed us to develop a loyal clientele.',
+    'about.history.content': 'Founded in 2008, Oxygene has established itself as a leader in professional cleaning. Our commitment to quality and innovation has allowed us to develop a loyal clientele.',
     'about.team.title': 'Our team',
     'about.team.content': 'A team of experienced professionals trained in the latest cleaning techniques. Each team member shares our values of quality and respect.',
     'about.csr.title': 'Social responsibility',

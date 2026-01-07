@@ -103,10 +103,10 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
         title={language === 'fr' ? "Rejoignez notre équipe" : "Join our team"}
         subtitle={language === 'fr' ? "Construisons ensemble l'avenir" : "Let's build the future together"}
         // description={language === 'fr' ? 
-        //   "Oxygène recrute régulièrement des professionnels motivés pour renforcer ses équipes. Découvrez nos opportunités." : 
-        //   "Oxygène regularly recruits motivated professionals to strengthen its teams. Discover our opportunities."
+        //   "Oxygene recrute régulièrement des professionnels motivés pour renforcer ses équipes. Découvrez nos opportunités." : 
+        //   "Oxygene regularly recruits motivated professionals to strengthen its teams. Discover our opportunities."
         // }
-        backgroundImage="https://images.unsplash.com/photo-1742483359033-13315b247c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwcHJvZmVzc2lvbmFsJTIwY2xlYW5pbmd8ZW58MXx8fHwxNzU3NTAyMTk3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+        backgroundImage="../../public/assets/images/job_application.png"
         actions={[
           {
             label: "Nous Contacter",
@@ -135,8 +135,8 @@ export function CareersPage({ onPageChange }: CareersPageProps) {
             </h2>
             <p className="text-xl text-gray-600">
               {language === 'fr' ? 
-                "Découvrez les avantages de travailler chez Oxygène" : 
-                "Discover the benefits of working at Oxygène"
+                "Découvrez les avantages de travailler chez Oxygene" : 
+                "Discover the benefits of working at Oxygene"
               }
             </p>
           </motion.div>

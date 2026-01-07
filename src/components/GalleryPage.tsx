@@ -98,7 +98,7 @@ export function GalleryPage({ onPageChange }: GalleryPageProps) {
         //   "Explorez nos projets de nettoyage et découvrez la transformation de nos espaces clients." : 
         //   "Explore our cleaning projects and discover the transformation of our client spaces."
         // }
-        backgroundImage="https://images.unsplash.com/photo-1705990787785-3ca3eb668131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwaHlnaWVuZSUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NTc1MDIxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+        backgroundImage="../../public/assets/images/oxygene_team.jpg"
        actions={[
           {
             label: "Nous Contacter",

@@ -114,7 +114,7 @@ export function Chatbot({ onPageChange }: ChatbotProps) {
           <CardHeader className="bg-primary text-white rounded-t-lg">
             <CardTitle className="flex items-center space-x-2">
               <Bot className="h-5 w-5" />
-              <span>Assistant Oxygène</span>
+              <span>Assistant Oxygene</span>
             </CardTitle>
           </CardHeader>
           

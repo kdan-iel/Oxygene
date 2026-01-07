@@ -12,7 +12,12 @@ import {
   Award,
   ChevronLeft,
   ChevronRight,
-  ArrowRight
+  ArrowRight,
+  Handshake,
+  Flame,
+  HandHeart,
+  BadgeCheck,
+  Users2
 } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
@@ -108,17 +113,17 @@ export function HomePage({ onPageChange }: HomePageProps) {
       date: '15 Nov 2024'
     },
     {
-      title: 'Produits écologiques : l\'avenir du nettoyage',
-      excerpt: 'Comment les produits respectueux de l\'environnement révolutionnent le secteur.',
-      image: "/assets/images/blogpost/door_handles_cleaning.png",
-      date: '12 Nov 2024'
+      title: 'Entretien des sols : techniques professionnelles',
+      excerpt: 'Les secrets d\'un nettoyage de sol durable et efficace selon le type de revêtement.',
+      image: "../../public/assets/images/cleaning_man_machine.png",
+      date: '8 Nov 2024',
     },
     {
-      title: 'Entretien des sols : techniques professionnelles',
-      excerpt: 'Les secrets d\'un nettoyage de sol durable et efficace.',
-      image: "/assets/images/blogpost/hidden_costs.png",
-      date: '8 Nov 2024'
-    }
+      title: 'Nettoyage après travaux : guide complet',
+      excerpt: 'Tout ce qu\'il faut savoir pour un nettoyage efficace après des travaux de rénovation.',
+      image: "../../public/assets/images/teamwork.png",
+      date: '5 Nov 2024',
+    },
   ];
 
   useEffect(() => {
@@ -222,35 +227,35 @@ export function HomePage({ onPageChange }: HomePageProps) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center-safe" >
             <Card className="text-center p-6 border-0 shadow-lg">
               <CardContent className="pt-6">
-                <Sparkles className="h-12 w-12 text-primary mx-auto mb-4" />
+                <Handshake className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{t('home.values.trust')}</h3>
                 <p className="text-gray-600">{t('home.values.trust-desc')}</p>
               </CardContent>
             </Card>
             <Card className="text-center p-6 border-0 shadow-lg">
               <CardContent className="pt-6">
-                <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
+                <HandHeart className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{t('home.values.respect')}</h3>
                 <p className="text-gray-600">{t('home.values.respect-desc')}</p>
               </CardContent>
             </Card>
             <Card className="text-center p-6 border-0 shadow-lg">
               <CardContent className="pt-6">
-                <Leaf className="h-12 w-12 text-accent mx-auto mb-4" />
+                <Flame className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{t('home.values.passion')}</h3>
                 <p className="text-gray-600">{t('home.values.passion-desc')}</p>
               </CardContent>
             </Card>
             <Card className="text-center p-6 border-0 shadow-lg">
               <CardContent className="pt-6">
-                <Leaf className="h-12 w-12 text-accent mx-auto mb-4" />
+                <BadgeCheck className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{t('home.values.loyalty')}</h3>
                 <p className="text-gray-600">{t('home.values.loyalty-desc')}</p>
               </CardContent>
             </Card>
             <Card className="text-center p-6 border-0 shadow-lg">
               <CardContent className="pt-6">
-                <Leaf className="h-12 w-12 text-accent mx-auto mb-4" />
+                <Users2 className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{t('home.values.teamwork')}</h3>
                 <p className="text-gray-600">{t('home.values.teamwork-desc')}</p>
               </CardContent>
@@ -299,8 +304,8 @@ export function HomePage({ onPageChange }: HomePageProps) {
               <p className="text-gray-600">{t('home.why.experience')}</p>
             </div>
             <div className="text-center">
-              <CheckCircle className="h-12 w-12 text-accent mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-accent mb-2">✓</h3>
+              <CheckCircle className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-primary mb-2">✓</h3>
               <p className="text-gray-600">{t('home.why.certified')}</p>
             </div>
             {/* <div className="text-center">
@@ -309,8 +314,8 @@ export function HomePage({ onPageChange }: HomePageProps) {
               <p className="text-gray-600">{t('home.why.available')}</p>
             </div> */}
             <div className="text-center">
-              <Shield className="h-12 w-12 text-accent mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-accent mb-2">100%</h3>
+              <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-primary mb-2">100%</h3>
               <p className="text-gray-600">{t('home.why.guarantee')}</p>
             </div>
           </div>
@@ -356,7 +361,10 @@ export function HomePage({ onPageChange }: HomePageProps) {
                   <p className="text-sm text-gray-500 mb-2">{post.date}</p>
                   <h3 className="text-lg font-semibold mb-2">{post.title}</h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <Button variant="ghost" className="p-0 h-auto">
+                  <Button 
+                    variant="ghost" className="p-0 h-auto"
+                    onClick={() => onPageChange('blog')}
+                    >
                     {t('common.readMore')} <ArrowRight className="ml-1 h-4 w-4" />
                   </Button>
                 </CardContent>

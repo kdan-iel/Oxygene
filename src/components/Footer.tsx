@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram} from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram, Goal} from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { byPrefixAndName } from '@awesome.me/kit-cb8c25bf88/icons'
 
 interface FooterProps {
   onPageChange: (page: string) => void;
@@ -15,15 +17,51 @@ export function Footer({ onPageChange }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">Oxygène Hygiène et Propreté</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Oxygene Hygiène et Propreté</h3>
             <p className="text-gray-300 mb-4">
               {t('footer.description')}
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
-              <Instagram className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
-              <Linkedin className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" />
-              {/* <Tiktok className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" /> */}
+              <Facebook 
+                onClick={() =>
+                          window.open(
+                            "https://www.facebook.com/oxygiene/",
+                            "_blank"
+                )}
+                className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" 
+              />
+              <Instagram 
+                onClick={() =>
+                          window.open(
+                            "https://www.instagram.com/oxygene_sarl/",
+                            "_blank"
+                )}
+                className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" 
+              />
+              <Linkedin
+                onClick={() =>
+                          window.open(
+                            "https://www.linkedin.com/company/oxygene-hygi%C3%A8ne-et-propret%C3%A9/",
+                            "_blank"
+                )}
+                className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" 
+              />
+              {/* <Tiktok
+                onClick={() =>
+                          window.open(
+                            "https://www.tiktok.com/@oxygene_sarl",
+                            "_blank"
+                )}
+                className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" 
+              />
+              <GOA
+                onClick={() =>
+                          window.open(
+                            "https://www.youtube.com/channel/UCV8e2xG3za7n1z8xH6G0kWg",
+                            "_blank"
+                )}
+                className="h-5 w-5 text-gray-400 hover:text-white hover:scale-105 cursor-pointer transition-colors" 
+              /> */}
             </div>
           </div>
 
@@ -118,7 +156,7 @@ export function Footer({ onPageChange }: FooterProps) {
             <h4 className="font-semibold mb-4">{t('contact.title')}</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-primary mt-0.5" />
+                <MapPin className="h-12 w-12 text-primary mt-0.5" />
                 <div className="text-gray-300">
                   <p>{t('footer.address1')}</p>
                   <p>{t('footer.address2')}</p>
@@ -126,19 +164,33 @@ export function Footer({ onPageChange }: FooterProps) {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">93252996 / 96130264</span>
+                <a
+                  href="tel:0022893252996"
+                  className="text-gray-300 hover:text-white cursor-pointer transition-colors"
+                >
+                  +228 93252996 / 
+                </a>
+                <a
+                  href="tel:0022896130264"
+                  className="text-gray-300 hover:text-white cursor-pointer transition-colors"
+                >
+                  +228 96130264
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">oxygenecontact@
-                  yahoo.com</span>
+                  <a
+                  href="mailto:oxygenecontact@yahoo.com"
+                  className="text-gray-300 hover:text-white cursor-pointer transition-colors"
+                >
+                  oxygenecontact@yahoo.com
+                </a>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-primary mt-0.5" />
                 <div className="text-gray-300">
                   <p>Lun - Ven: 8h00 - 18h00</p>
                   <p>Sam: 9h00 - 16h00</p>
-                  <p>Dim: Sur demande</p>
                 </div>
               </div>
             </div>
@@ -147,7 +199,7 @@ export function Footer({ onPageChange }: FooterProps) {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 Oxygène Hygiène et Propreté. Tous droits réservés.
+            © 2025 Oxygene Hygiène et Propreté. Tous droits réservés.
           </p>
         </div>
       </div>
