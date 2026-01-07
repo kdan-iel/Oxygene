@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Button } from './ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Menu, X, Phone, Mail, Languages } from 'lucide-react';
-import oxygeneLogoImg from '../../assets/logo_oxygene.png';
+import oxygeneLogoImg from '../../public/assets/logo_oxygene.png';
 
 interface HeaderProps {
   currentPage: string;
